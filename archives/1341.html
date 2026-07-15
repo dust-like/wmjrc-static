@@ -11,17 +11,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 <link href="../favicon.ico" rel="icon" type="image/x-icon" />
 <meta name="robots" content="index,follow" />
-<!-- <link rel='stylesheet' id='style-css'  href='../wp-content/themes/Git-alpha/style.css' type='text/css' media='all' /> -->
+<!-- <link rel='stylesheet' id='style-css'  href='https://cdn.wmjrc.com/wp-content/Git-alpha/style.css' type='text/css' media='all' /> -->
 <link rel="stylesheet" type="text/css" href="../wp-content/cache/wpfc-minified/1fztissk/e3j8.css" media="all"/>
 <link rel='https://api.w.org/' href='#' data-static-disabled="true" />
 <meta name="keywords" content="按键精灵, 按键精灵">
 <meta name="description" content="前言 今天第一次玩那个天降福运，我就觉得可以用按键精灵写一个脚本实现自动玩游戏，本篇文章提供的源码中只有玩游戏的部分，可以自行加上发福袋的过程 源码 我使用的分辨率是1080*1920，如果分辨率不一样，代码还需要修改 For 9999 Dim RX,RY,YX,YY,BX,BY FindPic 463, 258, 615, 1559, 'Attachment:红色.png', '000000', 0, 0.8, RX, RY If R">
 <style type="text/css" id="custom-background-css">
-body.custom-background { background-image: url("../wp-content/uploads/2018/12/2018120305501035.png"); background-position: center center; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+body.custom-background { background-image: url("https://cdn.wmjrc.com/wp-content/2018/12/2018120305501035.png"); background-position: center center; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
 </style>
 <title>按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋 _ 一个垃圾程序员的学习笔记</title>
 <script>
-window._deel = {name: '一个垃圾程序员的学习笔记',url: '../wp-content/themes/Git-alpha/index.html', ajaxpager: '', commenton: 0, roll: [1,3]}
+window._deel = {name: '一个垃圾程序员的学习笔记',url: 'https://cdn.wmjrc.com/wp-content/Git-alpha/index.html', ajaxpager: '', commenton: 0, roll: [1,3]}
 </script>
 <!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script><![endif]-->
 <script>
@@ -29,10 +29,10 @@ var ajax={get:function(t,e){var s=new XMLHttpRequest||new ActiveXObject("Microso
 </script>
 </head>
 <body class="post-template-default single single-post postid-1341 single-format-standard custom-background">
-<header style="background: url('../wp-content/uploads/2022/06/2022061716290722.png') center 0px repeat-x;background-size: cover;background-repeat:repeat-x\9" id="header" class="header">
+<header style="background: url('https://cdn.wmjrc.com/wp-content/2022/06/2022061716290722.png') center 0px repeat-x;background-size: cover;background-repeat:repeat-x\9" id="header" class="header">
 <style type="text/css">#nav-header{background-color: rgba(85,84,85, 0.5);background: rgba(85,84,85, 0.5);color: rgba(85,84,85, 0.5);}</style><style type="text/css">.navbar .nav li:hover a, .navbar .nav li.current-menu-item a, .navbar .nav li.current-menu-parent a, .navbar .nav li.current_page_item a, .navbar .nav li.current-post-ancestor a,.toggle-search ,#submit ,.pagination ul>.active>a,.pagination ul>.active>span,.bdcs-container .bdcs-search-form-submit,.metacat a{background: #03A9F4;}.footer,.title h2,.card-item .cardpricebtn{color: #03A9F4;}.bdcs-container .bdcs-search-form-submit ,.bdcs-container .bdcs-search {border-color: #03A9F4;}.pagination ul>li>a:hover,.navbar .nav li a:focus, .navbar .nav li a:hover,.toggle-search:hover,#submit:hover,.cardpricebtn .cardbuy {background-color: #2196F3;}.tooltip-inner{background-color:#2196F3;}.tooltip.top .tooltip-arrow{border-top-color:#2196F3;}.tooltip.right .tooltip-arrow{border-right-color:#2196F3;}.tooltip.left .tooltip-arrow{border-left-color:#2196F3;}.tooltip.bottom .tooltip-arrow{border-bottom-color:#2196F3;}</style>
 <div class="container-inner"><div class="g-logo pull-left"><a href="../index.html">
-<div class="h1logo" ><img title="一个垃圾程序员的学习笔记" alt="一个垃圾程序员的学习笔记" src="../wp-content/uploads/2019/01/2019012322021574-e1548252270765.png"></div></a></div></div><div id="toubuads"></div>
+<div class="h1logo" ><img title="一个垃圾程序员的学习笔记" alt="一个垃圾程序员的学习笔记" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012322021574-e1548252270765.png"></div></a></div></div><div id="toubuads"></div>
 <div id="nav-header" class="navbar" style="border-bottom: 4px solid #03A9F4 ;">
 <style type="text/css">.bdsharebuttonbox a{cursor:pointer;border-bottom:0;margin-right:5px;width:28px;height:28px;line-height:28px;color:#fff}.bds_renren{background:#94b3eb}.bds_qzone{background:#fac33f}.bds_more{background:#40a57d}.bds_weixin{background:#7ad071}.bdsharebuttonbox a:hover{background-color:#7fb4ab;color:#fff;border-bottom:0}</style><div class="toggle-search pc-hide" style="float:right;position:absolute;top:0;right:0;"><i class="fa fa-search"></i></div><div class="search-expand pc-hide" style="display:none;"><div class="search-expand-inner pc-hide">
 <form method="get" class="searchform themeform" action="../index.html">
@@ -122,18 +122,18 @@ End If
 Delay 500  //这个暂停时间需要自行调试，貌似和手机/模拟器配置有关系
 Next 
 </pre>
-<p>附件<a href="../wp-content/uploads/2019/01/2019012818425895.png" rel="box" class="fancybox" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><img class="aligncenter size-full wp-image-1342" data-original="../wp-content/uploads/2019/01/2019012818425895.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
-<noscript><img class="aligncenter size-full wp-image-1342" src="../wp-content/uploads/2019/01/2019012818425895.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
+<p>附件<a href="https://cdn.wmjrc.com/wp-content/2019/01/2019012818425895.png" rel="box" class="fancybox" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><img class="aligncenter size-full wp-image-1342" data-original="https://cdn.wmjrc.com/wp-content/2019/01/2019012818425895.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
+<noscript><img class="aligncenter size-full wp-image-1342" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012818425895.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
 <p style="text-align: center;">蓝色.png</p>
-<p><a href="../wp-content/uploads/2019/01/2019012818430251.png" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><br />
-<img class="aligncenter size-full wp-image-1343" data-original="../wp-content/uploads/2019/01/2019012818430251.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
-<noscript><img class="aligncenter size-full wp-image-1343" src="../wp-content/uploads/2019/01/2019012818430251.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
+<p><a href="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430251.png" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><br />
+<img class="aligncenter size-full wp-image-1343" data-original="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430251.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
+<noscript><img class="aligncenter size-full wp-image-1343" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430251.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
 <p style="text-align: center;">红色.png</p>
-<p><a href="../wp-content/uploads/2019/01/2019012818430677.png" rel="box" class="fancybox" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><img class="aligncenter size-full wp-image-1344" data-original="../wp-content/uploads/2019/01/2019012818430677.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
-<noscript><img class="aligncenter size-full wp-image-1344" src="../wp-content/uploads/2019/01/2019012818430677.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
+<p><a href="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430677.png" rel="box" class="fancybox" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋"><img class="aligncenter size-full wp-image-1344" data-original="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430677.png!water.jpg"  alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p>
+<noscript><img class="aligncenter size-full wp-image-1344" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012818430677.png!water.jpg" alt="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋" alt="" /></a></p></noscript>
 <p style="text-align: center;">黄色.png</p>
 <hr /><div class="open-message">版权所有丨如未注明 , 均为原创丨本网站采用<a href="https://www.wmjrc.com/go.html?url=http://creativecommons.org/licenses/by-nc-sa/3.0/"  rel="nofollow" target="_blank" title="BY-NC-SA授权协议">BY-NC-SA</a>协议进行授权 <br >转载请注明原文链接：<a href="./1341.html" target="_blank" title="按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋">按键精灵实现 QQ 自动玩⌈天降福运⌋发福袋</a></div>		      <div class="article-social">
-<a href="javascript:;" data-action="./ding/index.html" data-id="1341" id="Addlike" class="action"><i class="fa fa-heart-o"></i>喜欢 (<span class="count">0</span>)</a><span class="or"><style>.article-social .weixin:hover{background:#fff;}</style><a class="weixin" style="border-bottom:0px;font-size:15pt;cursor:pointer;">赏<div class="weixin-popover"><div class="popover bottom in"><div class="arrow"></div><div class="popover-title"><center>[]</center></div><div class="popover-content"><img width="200px" height="200px" src="../wp-content/uploads/2020/03/2020031716213962.png" ></div></div></div></a></span><span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a></div></div></div></span></div>
+<a href="javascript:;" data-action="./ding/index.html" data-id="1341" id="Addlike" class="action"><i class="fa fa-heart-o"></i>喜欢 (<span class="count">0</span>)</a><span class="or"><style>.article-social .weixin:hover{background:#fff;}</style><a class="weixin" style="border-bottom:0px;font-size:15pt;cursor:pointer;">赏<div class="weixin-popover"><div class="popover bottom in"><div class="arrow"></div><div class="popover-title"><center>[]</center></div><div class="popover-content"><img width="200px" height="200px" src="https://cdn.wmjrc.com/wp-content/2020/03/2020031716213962.png" ></div></div></div></a></span><span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a></div></div></div></span></div>
 </article>
 <footer class="article-footer">
 <div class="article-tags"><i class="fa fa-tags"></i><a href="./tag/quickmacro/index.html" rel="tag">按键精灵</a></div></footer>
@@ -141,20 +141,20 @@ Next
 <span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="./1325.html" rel="prev">Screen to gif 下载</a></span>
 <span class="article-nav-next"><a href="./1347.html" rel="next">优化百度搜索页面及结果</a>  <i class="fa fa-angle-double-right"></i></span>
 </nav>
-<div id="donatecoffee" style="overflow:auto;display:none;"><img width="400" height="400" alt="支持作者一杯咖啡" src="../wp-content/uploads/2020/03/2020031716213962.png"></div>
+<div id="donatecoffee" style="overflow:auto;display:none;"><img width="400" height="400" alt="支持作者一杯咖啡" src="https://cdn.wmjrc.com/wp-content/2020/03/2020031716213962.png"></div>
 <div class="related_top">
 <div class="related_posts"><ul class="related_img">
 <li class="related_box"  >
-<a href="./2304.html" title="按键精灵一边看视频一边写word的代码" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="../wp-content/uploads/2019/04/2019042913311218.png" alt="按键精灵一边看视频一边写word的代码" /><br><span class="r_title">按键精灵一边看视频一边写word的代码</span></a>
+<a href="./2304.html" title="按键精灵一边看视频一边写word的代码" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="https://cdn.wmjrc.com/wp-content/2019/04/2019042913311218.png" alt="按键精灵一边看视频一边写word的代码" /><br><span class="r_title">按键精灵一边看视频一边写word的代码</span></a>
 </li>
 <li class="related_box"  >
-<a href="./2215.html" title="王者荣耀按键精灵脚本更新页面" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="../wp-content/uploads/2019/01/beepress6-1548170765.jpeg" alt="王者荣耀按键精灵脚本更新页面" /><br><span class="r_title">王者荣耀按键精灵脚本更新页面</span></a>
+<a href="./2215.html" title="王者荣耀按键精灵脚本更新页面" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="https://cdn.wmjrc.com/wp-content/2019/01/beepress6-1548170765.jpeg" alt="王者荣耀按键精灵脚本更新页面" /><br><span class="r_title">王者荣耀按键精灵脚本更新页面</span></a>
 </li>
 <li class="related_box"  >
-<a href="./2169.html" title="按键精灵手机版增加更新检测功能" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="../wp-content/uploads/2019/04/2019041312075079.png" alt="按键精灵手机版增加更新检测功能" /><br><span class="r_title">按键精灵手机版增加更新检测功能</span></a>
+<a href="./2169.html" title="按键精灵手机版增加更新检测功能" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="https://cdn.wmjrc.com/wp-content/2019/04/2019041312075079.png" alt="按键精灵手机版增加更新检测功能" /><br><span class="r_title">按键精灵手机版增加更新检测功能</span></a>
 </li>
 <li class="related_box"  >
-<a href="./516.html" title="按键精灵连接不上模拟器的解决方法" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="../wp-content/uploads/2018/12/2018120716510413.png" alt="按键精灵连接不上模拟器的解决方法" /><br><span class="r_title">按键精灵连接不上模拟器的解决方法</span></a>
+<a href="./516.html" title="按键精灵连接不上模拟器的解决方法" target="_blank"><img class="thumb" style="width:185px;height:110px" data-original="https://cdn.wmjrc.com/wp-content/2018/12/2018120716510413.png" alt="按键精灵连接不上模拟器的解决方法" /><br><span class="r_title">按键精灵连接不上模拟器的解决方法</span></a>
 </li>
 </ul>
 <div class="relates">
@@ -212,16 +212,16 @@ data-ad-slot="6753663732"</ins>
 </div>
 <aside class="sidebar">
 <div class="widget git_postlist"><div class="title"><h2>推荐阅读</h2></div><ul><li>
-<a target="_blank" href="./3047.html" title="微博上亿用户信息泄露，对我们有何影响？" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2020/03/2020032101441252.png" alt="微博上亿用户信息泄露，对我们有何影响？" /></span><span class="text">微博上亿用户信息泄露，对我们有何影响？</span><span class="muted">2020-03-21</span><span class="muted">0</span></a>
+<a target="_blank" href="./3047.html" title="微博上亿用户信息泄露，对我们有何影响？" ><span class="thumbnail"><img width="100px" height="64px" src="https://cdn.wmjrc.com/wp-content/2020/03/2020032101441252.png" alt="微博上亿用户信息泄露，对我们有何影响？" /></span><span class="text">微博上亿用户信息泄露，对我们有何影响？</span><span class="muted">2020-03-21</span><span class="muted">0</span></a>
 </li>
 <li>
-<a target="_blank" href="./638.html" title="你从未玩过的船新背单词软件" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2018/12/beepress4-1546202080.jpeg" alt="你从未玩过的船新背单词软件" /></span><span class="text">你从未玩过的船新背单词软件</span><span class="muted">2018-12-12</span><span class="muted">0</span></a>
+<a target="_blank" href="./638.html" title="你从未玩过的船新背单词软件" ><span class="thumbnail"><img width="100px" height="64px" src="https://cdn.wmjrc.com/wp-content/2018/12/beepress4-1546202080.jpeg" alt="你从未玩过的船新背单词软件" /></span><span class="text">你从未玩过的船新背单词软件</span><span class="muted">2018-12-12</span><span class="muted">0</span></a>
 </li>
 <li>
-<a target="_blank" href="./1563.html" title="庆祝情人节 Google Play商城发布价值1美元的优惠券" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/02/2019021516015680.png" alt="庆祝情人节 Google Play商城发布价值1美元的优惠券" /></span><span class="text">庆祝情人节 Google Play商城发布价值1美元的优惠券</span><span class="muted">2019-02-15</span><span class="muted">0</span></a>
+<a target="_blank" href="./1563.html" title="庆祝情人节 Google Play商城发布价值1美元的优惠券" ><span class="thumbnail"><img width="100px" height="64px" src="https://cdn.wmjrc.com/wp-content/2019/02/2019021516015680.png" alt="庆祝情人节 Google Play商城发布价值1美元的优惠券" /></span><span class="text">庆祝情人节 Google Play商城发布价值1美元的优惠券</span><span class="muted">2019-02-15</span><span class="muted">0</span></a>
 </li>
 <li>
-<a target="_blank" href="./920.html" title="pr 如何导出高质量的视频、Gif" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/01/2019012714543833.jpg" alt="pr 如何导出高质量的视频、Gif" /></span><span class="text">pr 如何导出高质量的视频、Gif</span><span class="muted">2019-01-13</span><span class="muted">0</span></a>
+<a target="_blank" href="./920.html" title="pr 如何导出高质量的视频、Gif" ><span class="thumbnail"><img width="100px" height="64px" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012714543833.jpg" alt="pr 如何导出高质量的视频、Gif" /></span><span class="text">pr 如何导出高质量的视频、Gif</span><span class="muted">2019-01-13</span><span class="muted">0</span></a>
 </li>
 </ul></div><div class="widget git_banner"><div class="git_banner_inner"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 小工具2 -->
@@ -233,7 +233,7 @@ data-ad-format="auto"
 data-full-width-responsive="true"></ins>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div></div><div class="widget git_rec"><a target="_blank" class="aclass02" href="https://wmjrc.com/go.html/?url=https://portal.qiniu.com/signup?code=1ha1oh0rvpo42" title="七牛云：不仅仅是云存储" >七牛云：不仅仅是云存储</a><a target="_blank" class="aclass01" href="https://wmjrc.com/go.html/?url=https://www.vultr.com/?ref=7638531" title="vultr：充十刀送十刀" >vultr：充十刀送十刀</a><a target="_blank" class="aclass03" href="https://wmjrc.com/go.html/?url=https://console.upyun.com/register/?invite=r1fbGQsKH" title="又拍云：注册认证送 61元代金券" >又拍云：注册认证送 61元代金券</a><a target="_blank" class="aclass04" href="https://wmjrc.com/go.html/?url=https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=bfqmx0zv" title="阿里云：爆款云服务器，低至2折" >阿里云：爆款云服务器，低至2折</a><a target="_blank" class="aclass05" href="https://wmjrc.com/go.html/?url=https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=4091708dcdf64534b4ea66fee567568c&from=console" title="腾讯云：新用户领取2860元代金券" >腾讯云：新用户领取2860元代金券</a></div><!-- From widget cache in 0.00049 seconds --><div class="widget widget_text"><div class="title"><h2>微信公众号：不务正业的挖煤工</h2></div>			<div class="textwidget"><p><img class="aligncenter wp-image-1223" src="../wp-content/uploads/2019/01/2019012314404215.png" alt="" width="360" height="240" /></a></p>
+</script></div></div><div class="widget git_rec"><a target="_blank" class="aclass02" href="https://wmjrc.com/go.html/?url=https://portal.qiniu.com/signup?code=1ha1oh0rvpo42" title="七牛云：不仅仅是云存储" >七牛云：不仅仅是云存储</a><a target="_blank" class="aclass01" href="https://wmjrc.com/go.html/?url=https://www.vultr.com/?ref=7638531" title="vultr：充十刀送十刀" >vultr：充十刀送十刀</a><a target="_blank" class="aclass03" href="https://wmjrc.com/go.html/?url=https://console.upyun.com/register/?invite=r1fbGQsKH" title="又拍云：注册认证送 61元代金券" >又拍云：注册认证送 61元代金券</a><a target="_blank" class="aclass04" href="https://wmjrc.com/go.html/?url=https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=bfqmx0zv" title="阿里云：爆款云服务器，低至2折" >阿里云：爆款云服务器，低至2折</a><a target="_blank" class="aclass05" href="https://wmjrc.com/go.html/?url=https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=4091708dcdf64534b4ea66fee567568c&from=console" title="腾讯云：新用户领取2860元代金券" >腾讯云：新用户领取2860元代金券</a></div><!-- From widget cache in 0.00049 seconds --><div class="widget widget_text"><div class="title"><h2>微信公众号：不务正业的挖煤工</h2></div>			<div class="textwidget"><p><img class="aligncenter wp-image-1223" src="https://cdn.wmjrc.com/wp-content/2019/01/2019012314404215.png" alt="" width="360" height="240" /></a></p>
 </div>
 </div><!-- From widget cache in 0.00039 seconds --></aside></section>
 <div id="footbar" style="border-top: 2px solid #8E44AD;"><ul>
@@ -241,35 +241,35 @@ data-full-width-responsive="true"></ins>
 <li><p class="second">合作网站</p><span><a
 href="https://wmjrc.com/go.html/?url=https://portal.qiniu.com/signup?code=1ha1oh0rvpo42" target="_blank"><img 
 style="width:100px;height:32px;" 
-src="../wp-content/uploads/2019/01/2019011812531023.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/01/2019011812531023.png" 
 alt="七牛云" /></a>  
 <a href="https://wmjrc.com/go.html/?url=https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=4091708dcdf64534b4ea66fee567568c&from=console" target="_blank"><img 
 style="width:100px;height:24px;" 
-src="../wp-content/uploads/2019/01/2019011812531095.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/01/2019011812531095.png" 
 alt="腾讯云" /></a>
 <a href="https://wmjrc.com/go.html/?url=https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=bfqmx0zv" target="_blank"><img 
 style="width:100px;height:23px;" 
-src="../wp-content/uploads/2019/01/2019011812530981.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/01/2019011812530981.png" 
 alt="阿里云" /></a>
 <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img 
 style="width:100px;height:34px;" 
-src="../wp-content/uploads/2019/01/2019011812531054.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/01/2019011812531054.png" 
 alt="又拍云提供下载支持" /></a>  
 <br>
 <a href="https://wmjrc.com/go.html/?url=https://wordpress.org" target="_blank"><img 
 style="width:32px;height:32px;" 
-src="../wp-content/uploads/2019/01/2019011718550479.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/01/2019011718550479.png" 
 alt="由WordPress驱动" /></a></span></li>
 <li><p class="third">友情链接</p><span><ul><li><a href="https://gitcafe.net/" title="极客公园" target="_blank">极客公园</a></li></ul></span></li>
 <li><p class="fourth">微信公众号</p><span>    <img 
 style="width:215px;height:169px;" 
-src="../wp-content/uploads/2019/02/2019021018090557.png" 
+src="https://cdn.wmjrc.com/wp-content/2019/02/2019021018090557.png" 
 alt="微信公众号" /></span></li>
 </ul>
 </div>
 <footer style="border-top: 1px solid ;background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAAgAKAwERAAIRAQMRAf/EAEwAAQEAAAAAAAAAAAAAAAAAAAAJAQEAAAAAAAAAAAAAAAAAAAAAEAEBAAAAAAAAAAAAAAAAAAAAlREBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ah7DAhg//2Q=='); background-repeat: repeat;" class="footer">
 <div class="footer-inner"><div class="footer-copyright">Copyright © 2018-2021 <a href="../index.html" title="wmjrc">wmjrc</a> | <a href="../sitemap.html" target="_blank" title="站点地图（HTML版）">网站地图</a> | 
-<img style="width: 20px; height: 20px;" src="../wp-content/uploads/2019/01/201901050816024.png" alt="备案标识" /><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener"> 豫ICP备 18046141号-1</a>  <a href="http://www.beian.gov.cn/" target="_blank" rel="nofollow noopener"> 鄂公网安备 42010702000606号</a>
+<img style="width: 20px; height: 20px;" src="https://cdn.wmjrc.com/wp-content/2019/01/201901050816024.png" alt="备案标识" /><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener"> 豫ICP备 18046141号-1</a>  <a href="http://www.beian.gov.cn/" target="_blank" rel="nofollow noopener"> 鄂公网安备 42010702000606号</a>
 <span class="trackcode pull-right"><script>
 var _hmt = _hmt || [];
 (function() {
@@ -280,6 +280,6 @@ s.parentNode.insertBefore(hm, s);
 })();
 </script></span></div></div></footer>
 <script type='text/javascript' src='https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js'></script>
-<script type='text/javascript' src='../wp-content/themes/Git-alpha/assets/js/app.js'></script>
+<script type='text/javascript' src='https://cdn.wmjrc.com/wp-content/Git-alpha/assets/js/app.js'></script>
 <!-- 72 次查询 用时 0.827 秒, 耗费了 24.73MB 内存 --><script>with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="https://fastly.jsdelivr.net/gh/yunluo/GitCafeApi/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script></body>
 </html><!-- WP Fastest Cache file was created in 0.32533502578735 seconds, on 15-07-26 13:37:25 --><!-- via php -->
