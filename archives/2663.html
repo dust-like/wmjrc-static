@@ -1,0 +1,2459 @@
+<!--
+代码如诗 , 如痴如醉 !
+-->
+<!DOCTYPE HTML>
+<html xmlns:wb="http://open.weibo.com/wb" lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<link href="../favicon.ico" rel="icon" type="image/x-icon" />
+<meta name="robots" content="index,follow" />
+<!-- <link rel='stylesheet' id='style-css'  href='../wp-content/themes/Git-alpha/style.css' type='text/css' media='all' /> -->
+<link rel="stylesheet" type="text/css" href="../wp-content/cache/wpfc-minified/1fztissk/e3j8.css" media="all"/>
+<link rel='https://api.w.org/' href='#' data-static-disabled="true" />
+<meta name="keywords" content="iApp, iApp">
+<meta name="description" content="《裕语言》速成开发手册  《裕语言》是一基于java的扩展性脚本语言，丰富的类库定置简单快速开发你的应用程序，让开发过程变得娱乐化大众化。《裕语言》是由游改乐计算编程工程师 黄裕先生 定制以及实现原型代码，其代码简单方便的编写体验是一大亮点，目前还会有更多强大的功能完善中。iApp是基于裕语言平台上运行的应用程序，全面想公众开放开放平台，任何有兴趣的人都可以参与开放设计自己的程序。  【s 变量】 用法： 申明变量  //可以赋数值 s">
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-image: url("../wp-content/uploads/2018/12/2018120305501035.png"); background-position: center center; background-size: auto; background-repeat: repeat; background-attachment: fixed; }
+</style>
+<title>iApp教程(手册) _ 一个垃圾程序员的学习笔记</title>
+<script>
+window._deel = {name: '一个垃圾程序员的学习笔记',url: '../wp-content/themes/Git-alpha/index.html', ajaxpager: '', commenton: 0, roll: [1,3]}
+</script>
+<!--[if lt IE 9]><script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script><![endif]-->
+<script>
+var ajax={get:function(t,e){var s=new XMLHttpRequest||new ActiveXObject("Microsoft,XMLHTTP");s.open("GET",t,!0),s.onreadystatechange=function(){(4==s.readyState&&200==s.status||304==s.status)&&e.call(this,s.responseText)},s.send()},post:function(t,e,s){var n=new XMLHttpRequest||new ActiveXObject("Microsoft,XMLHTTP");n.open("POST",t,!0),n.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),n.onreadystatechange=function(){4!=n.readyState||200!=n.status&&304!=n.status||s.call(this,n.responseText)},n.send(e)}};function setCookie(e,t,o){var i=new Date;i.setDate(i.getDate()+o),document.cookie=e+"="+escape(t)+(null==o?"":";expires="+i.toGMTString())};function getCookie(e){var t,n=new RegExp("(^| )"+e+"=([^;]*)(;|$)");return(t=document.cookie.match(n))?t[2]:null};
+</script>
+</head>
+<body class="post-template-default single single-post postid-2663 single-format-standard custom-background">
+<header style="background: url('../wp-content/uploads/2022/06/2022061716290722.png') center 0px repeat-x;background-size: cover;background-repeat:repeat-x\9" id="header" class="header">
+<style type="text/css">#nav-header{background-color: rgba(85,84,85, 0.5);background: rgba(85,84,85, 0.5);color: rgba(85,84,85, 0.5);}</style><style type="text/css">.navbar .nav li:hover a, .navbar .nav li.current-menu-item a, .navbar .nav li.current-menu-parent a, .navbar .nav li.current_page_item a, .navbar .nav li.current-post-ancestor a,.toggle-search ,#submit ,.pagination ul>.active>a,.pagination ul>.active>span,.bdcs-container .bdcs-search-form-submit,.metacat a{background: #03A9F4;}.footer,.title h2,.card-item .cardpricebtn{color: #03A9F4;}.bdcs-container .bdcs-search-form-submit ,.bdcs-container .bdcs-search {border-color: #03A9F4;}.pagination ul>li>a:hover,.navbar .nav li a:focus, .navbar .nav li a:hover,.toggle-search:hover,#submit:hover,.cardpricebtn .cardbuy {background-color: #2196F3;}.tooltip-inner{background-color:#2196F3;}.tooltip.top .tooltip-arrow{border-top-color:#2196F3;}.tooltip.right .tooltip-arrow{border-right-color:#2196F3;}.tooltip.left .tooltip-arrow{border-left-color:#2196F3;}.tooltip.bottom .tooltip-arrow{border-bottom-color:#2196F3;}</style>
+<div class="container-inner"><div class="g-logo pull-left"><a href="../index.html">
+<div class="h1logo" ><img title="一个垃圾程序员的学习笔记" alt="一个垃圾程序员的学习笔记" src="../wp-content/uploads/2019/01/2019012322021574-e1548252270765.png"></div></a></div></div><div id="toubuads"></div>
+<div id="nav-header" class="navbar" style="border-bottom: 4px solid #03A9F4 ;">
+<style type="text/css">.bdsharebuttonbox a{cursor:pointer;border-bottom:0;margin-right:5px;width:28px;height:28px;line-height:28px;color:#fff}.bds_renren{background:#94b3eb}.bds_qzone{background:#fac33f}.bds_more{background:#40a57d}.bds_weixin{background:#7ad071}.bdsharebuttonbox a:hover{background-color:#7fb4ab;color:#fff;border-bottom:0}</style><div class="toggle-search pc-hide" style="float:right;position:absolute;top:0;right:0;"><i class="fa fa-search"></i></div><div class="search-expand pc-hide" style="display:none;"><div class="search-expand-inner pc-hide">
+<form method="get" class="searchform themeform" action="../index.html">
+<div><input type="text" class="search" placeholder="输入内容并回车" name="s" x-webkit-speech /></div>
+</form>
+</div>
+</div>
+<ul class="nav">
+<li id="menu-item-1295" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1295"><a href="../index.html"><i class="fa fa-home"></i> 首页</a></li>
+<li id="menu-item-742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-742"><a><i class="fa fa-cubes" ></i> 软件推荐</a>
+<ul class="sub-menu">
+<li id="menu-item-494" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-494"><a href="../mobilesoftware/index.html"><i class="fa fa-android" ></i> 手机软件</a></li>
+<li id="menu-item-495" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-495"><a href="../pcsoftware/index.html"><i class="fa fa-windows" ></i> 电脑软件</a></li>
+</ul>
+</li>
+<li id="menu-item-512" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-512"><a href="../skills/index.html"><i class="fa fa-bolt" ></i> 玩机技巧</a></li>
+<li id="menu-item-632" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-632"><a href="../wordpress/index.html"><i class="fa fa-wordpress" aria-hidden="true"></i>  wordpress</a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-509"><a href="../share/index.html"><i class="fa fa-star-o" aria-hidden="true"></i> 资源分享</a></li>
+<li id="menu-item-928" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928"><a href="../mix/index.html"><i class="fa fa-archive" aria-hidden="true"></i>  杂谈</a></li>
+<li id="menu-item-491" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-491"><a href="../about.html"><i class="fa fa-hourglass-half" aria-hidden="true"></i>  关于</a></li>
+<li style="float:right;"><div class="toggle-search m-hide"><i class="fa fa-search"></i></div><div class="search-expand" style="display: none;"><div class="search-expand-inner">
+<form method="get" class="searchform themeform" action="../index.html">
+<div><input type="text" class="search" placeholder="输入内容并回车" name="s" x-webkit-speech /></div>
+</form>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</header>
+<section class="container">
+<div class="speedbar">
+<div class="login-sign pull-right">
+<i class="fa fa-sign-in" ></i>  <a target="_blank" href="#" data-static-disabled="true">登录</a>&nbsp;&nbsp;<i class="fa fa-pencil-square-o" ></i>  <a href="#" data-static-disabled="true">注册</a></div>
+<div class="toptip" id="callboard"><ul style="font-size:16px;margin-top:2px;">
+<li></li></ul></div>
+</div>
+<div class="content-wrap">
+<div class="content">
+<div class="breadcrumbs"><a title="返回首页" href="../index.html"><i class="fa fa-home"></i></a> <small>></small> <a href="../iapp/index.html">iApp</a> <small>></small> <span class="muted">iApp教程(手册)</span></div><style type="text/css">.prettyprint,pre.prettyprint{background-color:#272822;border:none;overflow:hidden;padding:10px 15px;}.prettyprint.linenums,pre.prettyprint.linenums{-webkit-box-shadow:inset 40px 0 0 #39382E,inset 41px 0 0 #464741;-moz-box-shadow:inset 40px 0 0 #39382E,inset 41px 0 0 #464741;box-shadow:inset 40px 0 0 #39382E,inset 41px 0 0 #464741;}.prettyprint.linenums ol,pre.prettyprint.linenums ol{margin:0 0 0 33px;}.prettyprint.linenums ol li,pre.prettyprint.linenums ol li{padding-left:12px;color:#bebec5;line-height:20px;margin-left:0;list-style:decimal;}.prettyprint .com{color:#93a1a1;}.prettyprint .lit{color:#AE81FF;}.prettyprint .pun,.prettyprint .opn,.prettyprint .clo{color:#F8F8F2;}.prettyprint .fun{color:#dc322f;}.prettyprint .str,.prettyprint .atv{color:#E6DB74;}.prettyprint .kwd,.prettyprint .tag{color:#F92659;}.prettyprint .typ,.prettyprint .atn,.prettyprint .dec,.prettyprint .var{color:#A6E22E;}.prettyprint .pln{color:#66D9EF;}</style>				<header class="article-header">
+<h1 class="article-title"><a href="./2663.html">iApp教程(手册)</a></h1>
+<div class="meta">
+<span id="mute-category" class="muted"><i class="fa fa-list-alt"></i><a href="../iapp/index.html"> iApp</a></span>				<span class="muted"><i class="fa fa-user"></i> <a href="./author/jiruochen/index.html">季若尘</a></span>
+<span class="muted"><i class="fa fa-info-circle"></i> 来源：<a rel="nofollow" target="_blank" href="https://qiulai.wodemo.net/entry/333398">iApp教程(手册)</a></span>
+<span class="muted"><i class="fa fa-clock-o"></i> 7年前 (2019-08-05)</span>
+<span class="muted"><i class="fa fa-eye"></i> 8936次浏览</span>
+<span class="muted"><i class="fa fa-flag"></i> <a target="_blank" title="点击查看" rel="external nofollow" href="http://www.baidu.com/s?wd=iApp教程(手册)">已收录</a></span>				<span class="muted"><i class="fa fa-comments-o"></i> <a href="./2663.html#respond">0个评论</a></span>						 <span class="muted qrimg"><i class="fa fa-qrcode"></i> <a style="cursor:pointer;">扫描二维码</a>
+<div><img id="qrious"></div>
+</span>
+<style type="text/css">.qrimg{position:relative;}.qrimg div{display:none;width:200px;}.qrimg:hover div{z-index:99999;display:block;position: absolute;left:-50px;top:35px;}</style>
+<script src="https://cdn.bootcss.com/qrious/4.0.2/qrious.min.js"></script>
+<script type="text/javascript">
+var qr = new QRious({
+element: document.getElementById("qrious"),
+size : 200,
+value: "./2663.html"
+});
+</script>
+<span class="muted"></span>
+</div>
+</header>
+<article class="article-content">
+<p>《裕语言》速成开发手册</p>
+<p>《裕语言》是一基于 java 的扩展性脚本语言，丰富的类库定置简单快速开发你的应用程序，让开发过程变得娱乐化大众化。《裕语言》是由游改乐计算编程工程师 黄裕先生 定制以及实现原型代码，其代码简单方便的编写体验是一大亮点，目前还会有更多强大的功能完善中。iApp 是基于裕语言平台上运行的应用程序，全面想公众开放开放平台，任何有兴趣的人都可以参与开放设计自己的程序。</p>
+<p>【s 变量】<br />
+用法：<br />
+申明变量</p>
+<pre class="prettyprint linenums" >
+//可以赋数值
+s a = 123
+//可以赋字符串
+s a = &quot;123&quot;
+//可以副其他变量
+s b = a
+</pre>
+<p>说明：<br />
+变量类似一个箱子，你可以把数据储存在里面，等需要的时候就取出来使用，可以改变它装你想要装的数据。裕语言中的变量是可以根据赋值，而自动转换的，所有无需申明数据类型。</p>
+<p>提示：<br />
+变量的定义规范， 以 “s ”开头。 然后加上自己自定义的变量名，比如“abc、 nihao、sfw123、www_zzw”变量不允许全部为数字，不允许掺杂符号，请不要使用太长的变量名，不推荐使用中文作为变量名。</p>
+<p>空值：<br />
+如果访问一个没有声明的变量，将返回“null”空值类型，这个不对等于字符的 &#8216;null&#8217;。<br />
+判断是否空值的例子:(这里我们不知道变量“abc”是否空值)</p>
+<pre class="prettyprint linenums" >
+f(abc == null)
+{
+syso(&quot;是 null&quot;)
+}
+</pre>
+<p>【.或// 注释语句】<br />
+用法</p>
+<pre class="prettyprint linenums" >
+.这个是变量“a”它的值等于“1”
+s a = 1
+//这个是变量“b”它的值等于“2”
+s b = 2
+</pre>
+<p>说明：<br />
+注释语句符号可以用“.” 也可以用“//”，以注释符号开头的正行，将会被代码执行器无视。通常用于给自己标示代码的含义</p>
+<p>提示：<br />
+不支持代码尾部使用注释语句，注释行必须开头为注释符，举错误的例：</p>
+<pre class="prettyprint linenums" >
+s a = 1 //这个是变量“a”它的值等于“1”
+//这个是变量“b”它的值等于“2” s b = 2
+</pre>
+<p>【syso 打印】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+syso(&quot;1314&quot;)
+//可以打印出数据，代码同等于 System.out.println(&quot;1314&quot;)，可以在测试时菜单，选择 syso 日志查看打印数据。
+</pre>
+<p>【f 判断语句】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+s a = 1
+s b = 1
+f(a == b)
+{
+syso(&quot;等于&quot;)
+}
+else
+{
+syso(&quot;不等于&quot;)
+}
+</pre>
+<pre class="prettyprint linenums" >
+s a = &quot;nimei&quot;
+s b = &quot;nimei&quot;
+f(a == b)
+{
+syso(&quot;等于&quot;)
+}
+else
+{
+syso(&quot;不等于&quot;)
+}
+</pre>
+<pre class="prettyprint linenums" >
+s a = 1
+s b = 2
+f(!a == b)
+{
+syso(&quot;等于&quot;)
+}
+else
+{
+syso(&quot;不等于&quot;)
+}
+</pre>
+<pre class="prettyprint linenums" >
+s a = 1
+s b = 2
+s c = 3
+f(a &lt; b &amp;&amp; b &lt; c)
+{
+syso(&quot;等于&quot;)
+}
+else
+{
+syso(&quot;不等于&quot;)
+}
+</pre>
+<pre class="prettyprint linenums" >
+s a = 1
+s b = 2
+s c = 2
+f(a == b || b == c)
+{
+syso(&quot;等于&quot;)
+}
+else
+{
+syso(&quot;不等于&quot;)
+}
+</pre>
+<p>说明：<br />
+条件判断语句，用于两个值的比较，常用于判断值是否对等与数值的大小，判断数据需要同类型数据对比。表达式返回的“是”，那么将执行 { 代码 } 里面的代码。“否”将执行 else 后面的代码（不支持运算表达式，例：a+b=2）</p>
+<p>支持运算符（返回 是 与 否）：<br />
+== 是否对等<br />
+!= 是否不等于<br />
+&gt;= 是否大于或等于<br />
+&lt;= 是否小于或等于<br />
+&gt; 是否大于<br />
+&lt; 是否小于<br />
+?* 字符串开通是否相同<br />
+*? 字符串结尾是否相同<br />
+? 字符串是否被包含<br />
+上面三个举例：<br />
+s a = &#8220;abcdef&#8221;<br />
+f(a ?* &#8220;abc&#8221;) 返回“是”<br />
+f(a *? &#8220;def&#8221;) 返回“是”<br />
+f(a ? &#8220;cde&#8221;) 返回“是”</p>
+<p>支持逻辑运算符：<br />
+|| 或者<br />
+&amp;&amp; 并且<br />
+! 反意</p>
+<p>【w 循环】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+//这将循环 99 次
+s a = 99
+w(a &gt; 0)
+{
+syso(a)
+s(a - 1, a)
+}
+</pre>
+<p>说明：<br />
+条件循环语句，比较值的变化，然后进行循环执行 { 代码 } 里面的代码。当条件为“否”的时候会停止循环，条件“是”的话，将一直循环执行。<br />
+支持运算符（返回 是 与 否）：（跟 f 语句 一样，请参考）</p>
+<p>【for 循环】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+for(1; 20)
+{
+syso(&quot;循环 20 次&quot;)
+}
+
+s a = 1
+s b = 10
+for(a; b)
+{
+syso(&quot;循环 10 次&quot;)
+}
+
+</pre>
+<p>说明：<br />
+参数可以给予另个参数，一个为初始循环的值，一个是最大循环值。</p>
+<p>【t 新线程】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+t()
+{
+syso(&quot;新线程里执行代码&quot;)
+}
+</pre>
+<p>说明：<br />
+启用新线程，去执行一些需要执行很久的代码。比如把下载文件，获取网页，大量的文件操作，可以放入新线里执行。这里线程的概念，启用新的线程帮你处理代码，这样不会影响到主线程。</p>
+<p>【tw 提示】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+tw(&quot;你好&quot;)
+</pre>
+<p>说明：<br />
+用于提醒用户，界面显示时长大约为 2 秒钟。弹出代码中的文字，来提醒用户。</p>
+<p>【fd 删除文件】<br />
+用法：(将删除 SD 卡根目录的 abc.zip 文件)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.zip&quot;
+fd(a, b)
+tw(b)
+</pre>
+<p>说明：<br />
+用于删除指定的文件，是否成功返回字符：“true”或 “false”</p>
+<p>提示：同时将创建变量“b”，作为记录返回的值。（通用于下面的）</p>
+<p>【fe 文件是否存在】<br />
+用法：(将判断 SD 卡根目录的 abc.zip 文件是否存在)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.zip&quot;
+fe(a, b)
+tw(b)
+</pre>
+<p>说明：<br />
+用于判断指定的文件存在，是否存在返回字符：“true”或 “false”</p>
+<p>【fs 文件大小】<br />
+用法：(将获取 SD 卡根目录的 abc.zip 文件占用的大小)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.zip&quot;
+fs(a, b)
+tw(b)
+</pre>
+<p>说明：<br />
+用于判断指定的文件存在，是否存在返回数值单位(字节)，若获取失败将返回 “-1”。</p>
+<pre class="prettyprint linenums" >
+转换为 KB：
+s a = &quot;abc.zip&quot;
+fs(a, b)
+s(b/1024, b)
+tw(b)
+转换为 MB：
+s2(b/1024/1024, b)
+//保留所有小数
+sn(b/1024/1024, b2)
+</pre>
+<p>【fr 读取文本】<br />
+用法：(将读取 SD 卡根目录的 abc.txt 文件里面的内容)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.txt&quot;
+fr(a, b)
+tw(b)
+
+s a = &quot;abc.txt&quot;
+s b = &quot;utf-8&quot;
+fr(a, b, c)
+tw(c)
+</pre>
+<p>说明：<br />
+用于读取文本文件的数据内容。</p>
+<p>【fra 读取文本】<br />
+用法：(将读取安装包内 assets 文件夹内的 abc.txt 文件里面的内容)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.txt&quot;
+fra(a, b)
+tw(b)
+
+s a = &quot;abc.txt&quot;
+s b = &quot;utf-8&quot;
+fra(a, b, c)
+tw(c)
+</pre>
+<p>说明：<br />
+用于读取文本文件的数据内容。</p>
+<p>【fw 写入文本】<br />
+用法：(将文本数据写入至 SD 卡根目录的 abc.txt 文件里面)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.txt&quot;
+s b = &quot;我是一个 txt 文件的内容&quot;
+fw(a, b)
+
+s a = &quot;abc.txt&quot;
+s b = &quot;我是一个 txt 文件的内容&quot;
+s c = &quot;utf-8&quot;
+fw(a, b, c)
+</pre>
+<p>【fc 复制文件】<br />
+用法：（在 SD 卡根目录 abc.txt 文件拷贝一个新的副本至 abc2.txt）</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.txt&quot;
+s b = &quot;abc2.txt&quot;
+fc(a, b, c)
+tw(c)
+</pre>
+<p>说明：<br />
+用于复制文件，创建一个新的副本文件。是否成功返回字符：“true”或 “false”</p>
+<p>【fl 文件列表】<br />
+用法：（获取一个目录的文件列表）</p>
+<pre class="prettyprint linenums" >
+s a = &quot;dir&quot;
+fl(a, b)
+for(c; b)
+{
+syso(c)
+}
+</pre>
+<p>说明：上面例子是获取 sd 卡根目录文件夹“dir”里面的所有子目录以及文件，并获取结果传入变量“b”，并用 for 循环，来读取变量“b”里面的列表数据，并把列表数据复制给变量“c”，其中代码会自动创建并赋值好变量：b、c</p>
+<p>提示：<br />
+看似有些复杂，理解了就简单了， 这里的变量“b”类型是一个数组，里面包含了一个数据列表。通过 for 循环可以顺序读取这个列表。并每次循环把每列的数据赋值给变量“c”</p>
+<p>【ft 转移文件】<br />
+用法：（将 SD 卡根目录的 abc.txt 转移至 abc3.txt）</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.txt&quot;
+s b = &quot;abc3.txt&quot;
+ft(a, b, c)
+tw(c)
+</pre>
+<p>说明：<br />
+用于转移文件。是否成功返回字符：“true”或 “false”</p>
+<p>【fdir 获取 SD 卡根目录路径】<br />
+用法：（获取根目录路径并赋值至变量“a”）</p>
+<pre class="prettyprint linenums" >
+fdir(a)
+tw(a)
+</pre>
+<p>说明：<br />
+通过获取根目录路径，就可以计算文件的绝对路径。</p>
+<p>【fuz 解压单个 zip】<br />
+用法：（将根目录文件 abc.apk 压缩包里的 AndroidManifest.xml 文件，解压到根目录 AndroidManifest2.xml）</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.apk&quot;
+s b = &quot;AndroidManifest.xml&quot;
+s c = &quot;AndroidManifest2.xml&quot;
+fuz(a, b, c, d)
+tw(d)
+</pre>
+<p>说明：<br />
+通过上面代码可以实现压缩包解压部分的文件，并返回赋值至变量“d”解压文件的数量</p>
+<p>【fuzs 解压整个 zip】<br />
+用法：(将根目录文件 abc.apk 压缩包解压至根目录文件夹 abcdir，会自动创建)</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.apk&quot;
+s b = &quot;abcdir&quot;
+fuzs(a, b, c)
+tw(c)
+</pre>
+<p>说明：<br />
+通过上面代码将解压整个压缩包至指定文件，并赋值至变量“c”，是否成功返回字符：“true”或 “false”</p>
+<p>【fo 打开文件】<br />
+用法：（将根目录打开安装 abc.apk 文件）</p>
+<pre class="prettyprint linenums" >
+s a = &quot;abc.apk&quot;
+fo(a)
+</pre>
+<p>说明：<br />
+可以调用系统工具打开不同的文件。</p>
+<p>【s+-*/% 运算方式】<br />
+用法：</p>
+<pre class="prettyprint linenums" >
+s a = 2
+
+//加法例子赋值 a=4
+s+(2, a)
+//减法例子赋值 a=3
+s-(5, a)
+//乘法例子赋值 a=6
+s*(3, a)
+//除法例子赋值 a=4
+s/(8, a)
+//求余例子赋值 a=2
+s%(5, a)
+
+//其他用法
+
+//加法例子赋值 a=7
+s+(2, 5, a)
+
+//乘法例子赋值 b=8
+s*(4, a, &quot;true&quot;, b)
+</pre>
+<p>说明：<br />
+此方法的效率高于 s 计算表达式、sb 计算表达式。 在循环数据运行时，是受到推荐的用法。</p>
+<p>【s 计算表达式】<br />
+用法：（用于计算表达式）<br />
+s a = 12<br />
+s b = 13<br />
+s(a + b, c)<br />
+//将提示：25<br />
+tw(c)</p>
+<p>s a = 60<br />
+s b = 14<br />
+s(a / (b + 12), c)<br />
+//将提示：2 （自动去除了小数）<br />
+tw(c)</p>
+<p>说明：<br />
+用于计算数据表达式，不支持逻辑表达式。</p>
+<p>【s2 计算表达式】<br />
+说明：<br />
+功能跟上面的一样，但这个会保留 2 位小数。</p>
+<p>【sb 计算表达式】<br />
+说明：<br />
+功能跟上面的一样，但这个兼容错误。并且支持负数计算。</p>
+<p>【sb2 计算表达式】<br />
+说明：<br />
+功能跟上面的一样，但这个兼容错误。并且支持负数计算。返回的赋值变量含有小数。</p>
+<p>【ss 变量相加】<br />
+用法：<br />
+s a = &#8220;123&#8221;<br />
+s b = &#8220;789&#8221;<br />
+ss(a + &#8220;456&#8221; + b, c)<br />
+//将提示：123456789<br />
+tw(c)</p>
+<p>说明：<br />
+将字符串数据相连，并赋值至变量“c”。</p>
+<p>【sr 替换字符】<br />
+用法：<br />
+s a = &#8220;123456789&#8221;<br />
+s b = &#8220;456&#8221;<br />
+s c = &#8220;.&#8221;<br />
+sr(a, b, c, d)<br />
+//将提示：123.789<br />
+tw(d)</p>
+<p>说明：<br />
+用于替换字符</p>
+<p>【sj 截取字符】<br />
+用法：<br />
+s a = &#8220;123456789&#8221;<br />
+s b = &#8220;34&#8221;<br />
+s c = &#8220;8&#8221;<br />
+sj(a, b, c, d)<br />
+//将提示：567<br />
+tw(d)</p>
+<p>说明：<br />
+用于截取数据部分字符</p>
+<p>【sl 数据数组】<br />
+用法：<br />
+s a = &#8220;12;12;12;12;12&#8221;<br />
+s b = &#8220;;&#8221;<br />
+sl(a, b, c)</p>
+<p>for(d; c)<br />
+{<br />
+//将打印 5 次：12<br />
+syso(d)<br />
+}</p>
+<p>说明：<br />
+将把变量“a”的字符串，切割成一个数组，以字符“.”为分割字符。并用循环顺序打印出数据。</p>
+<p>【siof 获取字符位置】<br />
+用法：<br />
+s a = &#8220;123456789&#8221;<br />
+s b = &#8220;3&#8221;<br />
+s c = 0<br />
+siof(a, b, c, d)<br />
+//将提示：2<br />
+tw(d)</p>
+<p>说明：<br />
+从前面向后面进行匹配。字符位置以 0 计算，若无为每月找到将返回 -1</p>
+<p>【slof 获取字符位置】<br />
+用法：<br />
+s a = &#8220;123456789&#8221;<br />
+s b = &#8220;4&#8221;<br />
+s c = 8<br />
+slof(a, b, c, d)<br />
+//将提示：3<br />
+tw(d)</p>
+<p>说明：<br />
+从后面向前面进行匹配。字符位置以 0 计算，若无为每月找到将返回 -1</p>
+<p>【ssg 截取字符】<br />
+用法：<br />
+s a = &#8220;abcdefghijk&#8221;<br />
+ssg(a, 2, 6, b)<br />
+//将提示：cdef<br />
+tw(b)</p>
+<p>说明：<br />
+根据字符的位置进行截取字符，若失败将变量“b”赋值 null</p>
+<p>【slg 获取字符长度】<br />
+用法：<br />
+s a = &#8220;123456789&#8221;<br />
+slg(a, b)<br />
+//将提示：9<br />
+tw(b)</p>
+<p>说明：<br />
+顾名思义。失败变量“b”将赋值 -1</p>
+<p>【strim 去除头尾空格】<br />
+用法：<br />
+s a = &#8221; 123456789 &#8221;<br />
+strim(a, b)<br />
+//将提示:123456789<br />
+tw(b)</p>
+<p>说明：<br />
+常用于去除后进行判断头尾字符。</p>
+<p>【slower 转换为小写】<br />
+用法：<br />
+s a = &#8220;AiufSUscN&#8221;<br />
+slower(a, b)<br />
+//将提示:aiufsuscn<br />
+tw(b)</p>
+<p>说明：<br />
+常用于转换为小写后进行判断。</p>
+<p>【supper 转换为大写】<br />
+用法：<br />
+s a = &#8220;AiufSUscN&#8221;<br />
+supper(a, b)<br />
+//将提示:AIUFSUSCN<br />
+tw(b)</p>
+<p>说明：<br />
+常用于转换为大写后进行判断。</p>
+<p>【stop 暂停代码】<br />
+用法：<br />
+tw(&#8220;1&#8221;)<br />
+stop(1000)<br />
+tw(&#8220;2&#8221;)<br />
+stop(1000)<br />
+tw(&#8220;3&#8221;)<br />
+stop(1000)<br />
+tw(&#8220;4&#8221;)</p>
+<p>说明：<br />
+每次执行 stop(1000) 将暂停 1 秒后，再执行下面代码。单位为毫秒：1000 毫秒 = 1 秒</p>
+<p>【hs 获取网页】<br />
+用法：<br />
+t()<br />
+{<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/&#038;#8221"  rel="nofollow">http://wap.baidu.com/&#038;#8221</a>;</a><br />
+hs(a, null, null, b)<br />
+tw(b)<br />
+}</p>
+<p>2，提交 post 数据:<br />
+t()<br />
+{<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/&#038;#8221"  rel="nofollow">http://wap.baidu.com/&#038;#8221</a>;</a><br />
+hs(a, &#8220;title=你好&amp;text=你好吗？&#8221;, &#8220;utf-8&#8221;, b)<br />
+tw(b)<br />
+}</p>
+<p>说明：<br />
+这里先开了一个线程，然后在线程里执行获取网页源码的工作，开线程是担心有些主线程界面。</p>
+<p>【hd 下载文件】<br />
+用法：（下载文件至 SD 卡根目录 abc.apk）<br />
+t()<br />
+{<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://abc.com/abc.apk%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://abc.com/abc.apk&#038;#8221"  rel="nofollow">http://abc.com/abc.apk&#038;#8221</a>;</a><br />
+s b = &#8220;abc.apk&#8221;<br />
+hs(a, b, c)<br />
+tw(c)<br />
+}</p>
+<p>说明：<br />
+开个线程，然后在里面下载一个文件。并存到 SD 卡。下载结果将赋值到变量“c”<br />
+返回的赋值：<br />
+0 下载成功<br />
+-1 下载失败</p>
+<p>【hw 访问网页】<br />
+用法：<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com/&#038;#8221"  rel="nofollow">http://wap.baidu.com/&#038;#8221</a>;</a><br />
+hw(a)</p>
+<p>说明：<br />
+使用内置浏览器访问网页。<br />
+可用于下载文件：<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://abc.com/abc.apk%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://abc.com/abc.apk&#038;#8221"  rel="nofollow">http://abc.com/abc.apk&#038;#8221</a>;</a><br />
+hw(a)</p>
+<p>【ug 获取控件属性】<br />
+用法：(1 为：控件 ID，第二个参数为控件属性标签，然后赋值到变量)<br />
+ug(1, &#8220;type&#8221;, a)<br />
+ug(1, &#8220;show&#8221;, b)<br />
+ug(1, &#8220;text&#8221;, c)<br />
+ug(1, &#8220;textcolor&#8221;, d)<br />
+ug(1, &#8220;txtsize&#8221;, e)<br />
+ug(1, &#8220;x&#8221;, f)<br />
+ug(1, &#8220;y&#8221;, g)<br />
+ug(1, &#8220;w&#8221;, h)<br />
+ug(1, &#8220;h&#8221;, i)<br />
+ug(1, &#8220;url&#8221;, f)<br />
+ug(1, &#8220;checked&#8221;, g)</p>
+<p>//可获取浏览器控件标题<br />
+ug(1, &#8220;title&#8221;, h)</p>
+<p>ss(a + &#8220;;&#8221; + b + &#8220;;&#8221; + c + &#8220;;&#8221; + d + &#8220;;&#8221; + e + &#8220;;&#8221; + f + &#8220;;&#8221; + g + &#8220;;&#8221; + h + &#8220;;&#8221; + i, a)<br />
+tw(a)</p>
+<p>说明：<br />
+根据输入来返回不同的控件数据。注意：有些控件没有指定属性，将返回 null。下面有属性介绍，可参考。</p>
+<p>【us 设置控件属性】<br />
+用法：(1 为：控件 ID，第二个参数为控件属性标签，第三个是需要赋值的数据或变量)</p>
+<p>控件状态：0 为可视，8 为隐藏<br />
+us(1, &#8220;show&#8221;, 0)</p>
+<p>//控件文本：你好<br />
+us(1, &#8220;text&#8221;, &#8220;你好&#8221;)</p>
+<p>//字体颜色：黑色<br />
+us(1, &#8220;textcolor&#8221;, -16777216)</p>
+<p>//字体大小：12dip<br />
+us(1, &#8220;txtsize&#8221;, 12)</p>
+<p>//编辑框设置密码模式：true 或 false<br />
+us(1, &#8220;password&#8221;, &#8220;true&#8221;)</p>
+<p>//编辑框为空默认显示的字符<br />
+us(1, &#8220;hint&#8221;, &#8220;这里输入&#8221;)</p>
+<p>//文本形态（如：居中,居右&#8230;）适用于编辑框控件，文本控件<br />
+说明：TOP:48；BOTTOM:80；RIGHT:5；LEFT:3；&#8230;.<br />
+us(1, &#8220;gravity&#8221;, 48)</p>
+<p>//设置图片拉伸：（CENTER、CENTER_CROP、CENTER_INSIDE、FIT_CENTER、FIT_END、FIT_START、FIT_XY、MATRIX）<br />
+us(1, &#8220;scaletype&#8221;, &#8220;FIT_XY&#8221;)</p>
+<p>//设置图标：根据系统图标 id<br />
+us(1, &#8220;imgrid&#8221;, 17301567)</p>
+<p>//设置图标：根据 SD 卡图片位置<br />
+us(1, &#8220;sdf&#8221;, &#8220;abc.png&#8221;)</p>
+<p>//设置图标：根据用户图标位置<br />
+us(1, &#8220;af&#8221;, &#8220;abc.png&#8221;)</p>
+<p>//设置图标：根据图像变量指定图片<br />
+us(1, &#8220;bf&#8221;, b)</p>
+<p>//设置背景颜色：-1 为白色，0 为透明<br />
+us(1, &#8220;background&#8221;, -1)</p>
+<p>//设置背景透明度：0 至 255，越小越透明<br />
+us(1, &#8220;backgroundalpha&#8221;, 100)</p>
+<p>//设置图片资源透明度：0 至 255，越小越透明<br />
+us(1, &#8220;alpha&#8221;, 100)</p>
+<p>//设置浏览器控件访问<br />
+us(1, &#8220;url&#8221;, &#8220;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com%22%29/"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com&#038;#8221"  rel="nofollow">http://wap.baidu.com&#038;#8221</a><img src="../wp-content/themes/Git-alpha/assets/img/smilies/icon_wink.gif" alt=";)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></p>
+<p>//设置多选控件选中状态<br />
+us(1, &#8220;checked&#8221;, &#8220;true&#8221;)</p>
+<p>//设置控件 x 位置坐标<br />
+us(1, &#8220;x&#8221;, 60)</p>
+<p>//设置控件 y 位置坐标<br />
+us(1, &#8220;y&#8221;, 60)</p>
+<p>//设置控件尺寸宽<br />
+us(1, &#8220;w&#8221;, 50)</p>
+<p>//设置控件尺寸高<br />
+us(1, &#8220;h&#8221;, 50)</p>
+<p>【uigo 跳转界面】<br />
+用法：（输入界面文件名，跳转指定的界面）<br />
+uigo(&#8220;abc.iyu&#8221;)</p>
+<p>说明：<br />
+可以界面之间的转换，扩展新的界面。</p>
+<p>【utw 弹出界面】<br />
+用法：（在原有的界面弹出界面）<br />
+s a = &#8220;界面标题&#8221;<br />
+s b = &#8220;界面内容&#8221;<br />
+s c = &#8220;确定&#8221;<br />
+s d = &#8220;取消&#8221;<br />
+utw(a, b, c, d)<br />
+{<br />
+syso(&#8220;点击了确定&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;点击了取消&#8221;)<br />
+}</p>
+<p>说明：<br />
+常用于询问用户当前的操作</p>
+<p>【end 结束界面】<br />
+用法：<br />
+end()</p>
+<p>说明：<br />
+调用后，将结束当前的界面。 并返回原来的界面。如果原来没有界面，将退出应用。</p>
+<p>【sran 生产范围随机数】<br />
+用法：（生产一个 100 至 1000 的随机数）<br />
+sran(100, 1000, a)<br />
+tw(a)</p>
+<p>说明：<br />
+有时候需要利用到随机机制，可以利用这个来开发！</p>
+<p>【fa 将安装包 assets 文件夹里的文件复制到 SD 卡】<br />
+用法：（复制安装包本身里面 assets 文件夹的文件）<br />
+s a = &#8220;data.zip&#8221;<br />
+s b = &#8220;data.zip&#8221;<br />
+fa(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+复制安装包内 assets 里面的文件到 SD 卡上，可用于作为需要加载初始数据。返回赋值字符：true 或 false<br />
+开发的时候将文件复制到 /iApp/app/工程 ID/assets/里面。然后就可以打包到 apk 里了</p>
+<p>【sgsz 指定访问数组维数】<br />
+用法：（根据序号访问数组）<br />
+s a = &#8220;12;34;56;78;90&#8221;<br />
+s b = &#8220;;&#8221;<br />
+sl(a, b, c)<br />
+sgsz(c, 2, d)<br />
+tw(d)</p>
+<p>说明：<br />
+数组可以进行列表形式存储数据，常用于数据列表。注意的是序号是从 0 开始的。数组总行数如果是 5，那序号最大为 4</p>
+<p>【sgszl 访问数组总行数】<br />
+用法：<br />
+s a = &#8220;12;34;56;78;90&#8221;<br />
+s b = &#8220;;&#8221;<br />
+sl(a, b, c)<br />
+sgszl(c, d)<br />
+tw(d)</p>
+<p>说明：<br />
+可以获取到长度，更准确的访问数组</p>
+<p>【fj 压缩文件或文件夹至 zip】<br />
+用法：<br />
+s a = &#8220;adc.txt&#8221;<br />
+s b = &#8220;abc.zip&#8221;<br />
+fj(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+压缩文件。返回赋值字符：true 或 false</p>
+<p>【bfm 播放音频】<br />
+用法：<br />
+s a = &#8220;abc.mp3&#8221;<br />
+bfm(a)</p>
+<p>s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://www.abc.com/abc.mp3%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://www.abc.com/abc.mp3&#038;#8243"  rel="nofollow">http://www.abc.com/abc.mp3&#038;#8243</a>;</a><br />
+bfm(a)</p>
+<p>s a = &#8220;abc.mp3&#8221;<br />
+bfm(a, b)<br />
+//播放<br />
+//bfms(b, &#8220;st&#8221;)<br />
+//暂停<br />
+//bfms(b, &#8220;pe&#8221;)<br />
+//停止<br />
+//bfms(b, &#8220;sp&#8221;)<br />
+//是否在播放<br />
+//bfms(b, &#8220;ip&#8221;, c)<br />
+//tw(c)<br />
+//一直循环播放<br />
+//bfms(b, &#8220;sl&#8221;, &#8220;true&#8221;)</p>
+<p>说明：<br />
+可以直接访问安装包里面的音频文件，也可以访问 sd 卡上的。默认优先播放 SD 卡上的音频文件</p>
+<p>【html 标签支持】<br />
+用法：<br />
+s a = &#8220;(html)&lt;a href=&#8221;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com%22%3E/"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com&#8221;&#038;gt"  rel="nofollow">http://wap.baidu.com&#8221;&#038;gt</a>;</a>百度&lt;/a&gt;&#8221;<br />
+us(1, &#8220;text&#8221;, a)</p>
+<p>说明：<br />
+文本控件，和多选框都支持！</p>
+<p>【ula 列表添加内容】<br />
+用法：(a:列表样式，b1:项 id，b2:项标题，c:赋值变量列表)<br />
+s a = &#8220;t&#8221;<br />
+s b1 = &#8220;123&#8221;<br />
+s b2 = &#8220;标题&#8221;<br />
+ula(a, b1; b2, c)</p>
+<p>s a = &#8220;it32&#8221;<br />
+s b1 = &#8220;123&#8221;<br />
+s b2 = &#8220;tu.png&#8221;<br />
+s b3 = &#8220;标题&#8221;<br />
+ula(a, b1; b2; b3, c)</p>
+<p>s a = &#8220;itt&#8221;<br />
+s b1 = &#8220;123&#8221;<br />
+s b2 = &#8220;tu.png&#8221;<br />
+s b3 = &#8220;标题&#8221;<br />
+s b4 = &#8220;介绍&#8221;<br />
+ula(a, b1; b2; b3; b4, c)</p>
+<p>说明：<br />
+将列表里添加内容，将内容添加到列表完毕后，可直接设置给列表控件 ID。</p>
+<p>[列表样式介绍]<br />
+t：显示一个文本控件；当点击后，返回一个数组：0:b1；1:b2<br />
+it32：显示一个图标，一个标题；当点击后，返回一个数组：0:b1；1:b2；2:b3<br />
+it52：显示一个图标，一个标题；当点击后，返回一个数组：0:b1；1:b2；2:b3<br />
+itt：显示一个图标，一个标题，一个介绍；当点击后，返回一个数组：0:b1；1:b2；2:b3；3:b4<br />
+itt2：显示一个图标，一个标题，一个介绍；当点击后，返回一个数组：0:b1；1:b2；2:b3；3:b4</p>
+<p>【uls 列表显示内容】<br />
+用法：(id:控件 id，a:列表样式，c:列表内容，d:项被点击后赋值数组变量)<br />
+s a = &#8220;t&#8221;<br />
+s b = &#8220;标题&#8221;<br />
+ula(a, b, c)</p>
+<p>s id = 4<br />
+uls(id, a, c, d)</p>
+<p>说明：<br />
+先通过列表添加内容， 然后在把列表内容设置到列表控件上显示。点击控件后，将把选择项内容赋值到数组变量“d”，然后通过访问数组获得你想要的数据。<br />
+图标支持：SD 卡上的图片，系统图标，安装包内的图标；如果你想设置安装包内的图标，那么需要自己将图标复制到工程目录：iAppapp(id)Userimg 里面，不然无法打包到安装包内。</p>
+<p>在列表点击事件里可以利用数组变量“d”来获取你想要的数据：<br />
+sgsz(d, 0, cc3)<br />
+tw(cc3)</p>
+<p>【usms 发送短信】<br />
+用法：<br />
+s a = &#8220;10086&#8221;<br />
+s b = &#8220;0&#8221;<br />
+usms(a, b)</p>
+<p>或<br />
+直接发送</p>
+<p>s a = &#8220;10086&#8221;<br />
+s b = &#8220;0&#8221;<br />
+usmsgo(a, b)<br />
+.注意:测试时只显示 syso 日志，不直接 发送短信，打包即可。</p>
+<p>【ucall 拨打电话】<br />
+用法：<br />
+s a = &#8220;10086&#8221;<br />
+ucall(a)</p>
+<p>或<br />
+直接拨打</p>
+<p>s a = &#8220;10086&#8221;<br />
+ucallgo(a)<br />
+.注意:测试时只显示 syso 日志，不直接 拨出号码，打包即可。</p>
+<p>【time 当前时间】<br />
+用法：<br />
+s a = 0<br />
+time(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+第一个参数为时间类型，第二个赋值变量</p>
+<p>[数字类型]<br />
+0：2014-07-07 09:10:08<br />
+1：2014/07/07 09:10:08<br />
+2：2014-07-07<br />
+3：09:10:08<br />
+4：18144133553151<br />
+5：2014 年 07 月 07 日 09:10:08<br />
+[字符类型]<br />
+Y 年<br />
+m 月<br />
+d 日<br />
+H 时<br />
+M 分<br />
+S 秒<br />
+a/A 星期几</p>
+<p>【fi 判断路径是否文件夹】<br />
+用法：<br />
+s a = &#8220;abc&#8221;<br />
+fi(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+指定路径，判断是否为目录文件夹，返回：true 或 false</p>
+<p>【swh 获取屏幕分辨率】<br />
+用法：<br />
+s a = &#8220;w&#8221;<br />
+swh(a, w)<br />
+s a = &#8220;h&#8221;<br />
+swh(a, h)<br />
+s a = &#8220;hh&#8221;<br />
+swh(a, hh)<br />
+ss(&#8220;宽:&#8221; + w + &#8221; 高:&#8221; + h, wh)<br />
+tw(wh)</p>
+<p>【浏览器控件】<br />
+添加好之后，需要在载入事件里加入指定转向地址<br />
+用法：<br />
+us(控件 ID, &#8220;url&#8221;, &#8220;<a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com%22%29/"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://wap.baidu.com&#038;#8221"  rel="nofollow">http://wap.baidu.com&#038;#8221</a><img src="../wp-content/themes/Git-alpha/assets/img/smilies/icon_wink.gif" alt=";)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></p>
+<p>【stobm 汉子转换编码字符】<br />
+用法：（你 转换 %E4%BD%A0）<br />
+stobm(&#8220;你&#8221;, &#8220;utf-8&#8221;, b)<br />
+tw(b)</p>
+<p>说明：<br />
+有些时候网络操作的时候，网址需要带有字符参数，就可以把这个汉字转换下。</p>
+<p>【sutf8to 将 UTF-8 编码字符转换中文】<br />
+sutf8to(&#8220;%E4%BD%A0&#8221;, b)<br />
+tw(b)</p>
+<p>【uycl 隐藏状态栏】<br />
+用法：<br />
+//隐藏<br />
+uycl(&#8220;true&#8221;)<br />
+//不隐藏<br />
+uycl(&#8220;false&#8221;)</p>
+<p>说明：<br />
+隐藏手机顶部的状态栏</p>
+<p>【ushsp 设置横屏或竖屏】<br />
+用法：<br />
+//横屏<br />
+ushsp(&#8220;hp&#8221;)<br />
+//竖屏<br />
+ushsp(&#8220;sp&#8221;)</p>
+<p>说明：<br />
+设置屏幕的显示方式，注意的是设置后载入事件将重新执行</p>
+<p>【fra 读取安装包 assets 文件夹文本】<br />
+用法：(将读取 assets 文件夹的 abc.txt 文件里面的内容)<br />
+s a = &#8220;abc.txt&#8221;<br />
+fra(a, b)<br />
+tw(b)</p>
+<p>s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;utf-8&#8221;<br />
+fra(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于读取文本文件的数据内容。</p>
+<p>【bfv 播放视频】<br />
+用法：(播放 SD 卡上的视频文件)<br />
+s a = &#8220;abcd.mp4&#8221;<br />
+bfv(a)</p>
+<p>说明：<br />
+此方法将全屏播放 SD 卡上的视频文件</p>
+<p>【endcode 结束执行】<br />
+用法：<br />
+s a = 1<br />
+s b = 1<br />
+f(a == b)<br />
+{<br />
+tw(&#8220;会提示&#8221;)<br />
+//结束执行代码<br />
+endcode<br />
+}<br />
+tw(&#8220;不会提示&#8221;)</p>
+<p>说明：<br />
+可用于提前结束执行代码，也可以用于模块的函数结束。</p>
+<p>【fn 模块与函数】<br />
+1.创建一个模块：<br />
+在程序文件列表，新建一个模块名“mokuai”</p>
+<p>2.在模块 mokuai.myu 里定义各种函数：<br />
+fn hanshu(a, b)<br />
+ss(a + b, c)<br />
+tw(c)<br />
+end fn<br />
+fn hanshu(a)<br />
+tw(a)<br />
+end fn</p>
+<p>3.在事件里根据模块对象来调用函数：<br />
+s a = &#8220;abc&#8221;<br />
+s b = &#8220;def&#8221;<br />
+fn mokuai.hanshu(a, b)<br />
+fn mokuai.hanshu(a)</p>
+<p>【esl 执行 shell 命令】<br />
+用法：输入命令行（多行命令可用“n”标示），输入是否获取权限，输入赋值变量<br />
+s a = &#8220;adb shell&#8221;<br />
+esl(a, true, bb)<br />
+sgsz(bb, 0, b)<br />
+tw(b)<br />
+sgsz(bb, 1, b)<br />
+tw(b)<br />
+sgsz(bb, 2, b)<br />
+tw(b)</p>
+<p>说明：<br />
+执行后将赋值一个数组至 bb， 数组共 3 位，第一位：状态；第二位：成功信息；第三位：失败信息；</p>
+<p>【inroot 手机是否已 root】<br />
+用法：<br />
+inroot(a)<br />
+tw(a)</p>
+<p>说明：<br />
+可判断设备是否已经 root</p>
+<p>【break 跳出循环以及代码块】<br />
+用法：<br />
+w(1 == 1)<br />
+{<br />
+syso(&#8220;1&#8221;)<br />
+break<br />
+syso(&#8220;2&#8221;)<br />
+}<br />
+f(1 == 1)<br />
+{<br />
+syso(&#8220;1&#8221;)<br />
+break<br />
+syso(&#8220;2&#8221;)<br />
+}</p>
+<p>说明：<br />
+代码块当执行 break 语句后，将跳出。</p>
+<p>【点击事件的状态以及坐标获取】<br />
+用法：</p>
+<p>//设置好<br />
+s IAPP_CLICK_KG = &#8220;true&#8221;</p>
+<p>//点击控件的 ID<br />
+tw(IAPP_CLICK_ID)</p>
+<p>//点击控件的状态<br />
+tw(IAPP_CLICK_STATE)</p>
+<p>//点击控件的 X 坐标<br />
+tw(IAPP_CLICK_X)</p>
+<p>//点击控件的 Y 坐标<br />
+tw(IAPP_CLICK_Y)</p>
+<p>//设置触发，当值为 true 时控件按下即触发事件代码；否则按下并且释放后再触发事件代码；默认不等于 true<br />
+s IAPP_CLICK_DOWN_UP_KG = &#8220;true&#8221;</p>
+<p>说明：<br />
+可实时获取点击过程的最新数据。仅限于点击 按钮；图片按钮；多项选择按钮；背景墙。可用于设计滑动效果，拖拽等！</p>
+<p>【ftz 发送通知栏】<br />
+用法：<br />
+ftz(&#8220;标题&#8221;, &#8220;标题&#8221;, &#8220;内容&#8221;, &#8220;<a href="https://www.wmjrc.com/go.html?url=http://m.baidu.com%22%29/"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://m.baidu.com&#038;#8221"  rel="nofollow">http://m.baidu.com&#038;#8221</a><img src="../wp-content/themes/Git-alpha/assets/img/smilies/icon_wink.gif" alt=";)" class="wp-smiley" style="height: 1em; max-height: 1em;" /></a></p>
+<p>//执行模块代码<br />
+s mk = &#8220;fn ttxs.aini(a)&#8221;<br />
+ftz(&#8220;标题&#8221;, &#8220;标题&#8221;, &#8220;内容&#8221;, mk)</p>
+<p>说明：<br />
+可以用于通知用户。</p>
+<p>【uapp 打开 App 应用】<br />
+用法：<br />
+uapp(&#8220;com.iapp&#8221;, &#8220;com.yougaile.MakeiApp.logoActivity&#8221;, c)</p>
+<p>或</p>
+<p>uapp(&#8220;com.iapp&#8221;, &#8220;&#8221;, c)</p>
+<p>说明：<br />
+上例输入 应用包名，应用启动类，赋值变量； 赋值变量返回启动结果：true 或 false</p>
+<p>【uapplist 获取 App 列表】<br />
+用法：<br />
+uapplist(true, b)<br />
+sgsz(b, 1, d)<br />
+tw(d)</p>
+<p>说明：<br />
+输入 是否包括获取系统 App，返回一个列表数组 至变量 “b”，每列数据将存储一个应用的信息，并且以 “n”隔开。</p>
+<p>其中列内容格式：<br />
+应用包名，启动类，应用标题，应用版本</p>
+<p>【uapplistgo 获取正在运行的 App 列表】<br />
+用法：<br />
+uapplistgo(b)<br />
+sgsz(b, 1, d)<br />
+tw(d)</p>
+<p>说明：<br />
+输入 返回一个列表数组 至变量 “b”，每列数据将存储一个应用的信息，并且以 “n”隔开。</p>
+<p>其中列内容格式：<br />
+应用包名，pid, uid</p>
+<p>【ucapp 结束正在运行的应用】<br />
+用法：<br />
+ucapp(&#8220;com.iapp&#8221;)</p>
+<p>说明：<br />
+输入正在运行的应用包名</p>
+<p>【uninapp 卸载应用】<br />
+用法：<br />
+uninapp(&#8220;com.iapp&#8221;)</p>
+<p>说明：<br />
+输入应用包名</p>
+<p>【uwifilist 获取 wifi 列表】<br />
+用法：<br />
+uwifilist(b)<br />
+sgsz(b, 0, d)<br />
+tw(d)</p>
+<p>说明：<br />
+输入 一个赋值变量， 返回一个列表数组 至变量 “b”，每列数据将存储一个应用的信息，并且以 “n”隔开。</p>
+<p>其中列内容格式：<br />
+信号强度，加密类型，wifi 名</p>
+<p>注意：<br />
+信号强度：值越小，信号就越好。</p>
+<p>【uwifigo 连接 wifi】<br />
+用法：<br />
+uwifigo(&#8220;wifi 名&#8221;, &#8220;123123&#8221;, &#8220;WPA&#8221;)<br />
+.uwifigo(&#8220;wifi 名&#8221;, &#8220;123123&#8221;, &#8220;WEP&#8221;)</p>
+<p>或</p>
+<p>.uwifigo(&#8220;wifi 名&#8221;, &#8220;123123n321321n1314520&#8221;, &#8220;WPA&#8221;)<br />
+uwifigo(&#8220;wifi 名&#8221;, &#8220;123123n321321n1314520&#8221;, &#8220;WEP&#8221;)</p>
+<p>说明：<br />
+输入 wifi 名，连接密码，加密方式。支持输入多个密码，将顺序进行验证，多密码请用“n”隔开。</p>
+<p>【ucwifi 强制断开 wifi】<br />
+用法：<br />
+ucwifi()</p>
+<p>【uiswifi 获取是否已经连接 wifi】<br />
+用法：<br />
+uiswifi(a)<br />
+tw(a)</p>
+<p>说明：<br />
+返回 true 或 false</p>
+<p>【ukgwifi 开关 wifi】<br />
+用法：<br />
+ukgwifi(true)<br />
+或<br />
+ukgwifi(false)</p>
+<p>说明：<br />
+输入 是与否。 可以启动 wifi 与 关闭 wifi 功能。</p>
+<p>【huf 上传文件】<br />
+用法：<br />
+t()<br />
+{<br />
+s a = &#8220;<a href="https://www.wmjrc.com/go.html?url=http://abc.com/upfile.php%22"  rel="nofollow" ><a href="https://www.wmjrc.com/go.html?url=http://abc.com/upfile.php&#038;#8221"  rel="nofollow">http://abc.com/upfile.php&#038;#8221</a>;</a><br />
+s b = &#8220;filename=iApp 我的应用.apk&amp;test=一款非常好的应用哦&#8221;<br />
+s c = &#8220;abc/iApp.apk&#8221;<br />
+s d = &#8220;utf-8&#8221;<br />
+huf(a, b, c, d, e)<br />
+tw(e)<br />
+}</p>
+<p>说明：<br />
+输入 http 接口，表单内容，手机内存选择文件，接口的网页编码， 赋值变量。 返回网页内容将赋值给变量 “e”</p>
+<p>【apksigner APK 文件签名】<br />
+用法：<br />
+apksigner(&#8220;1.apk&#8221;, &#8220;1_OK.apk&#8221;, b)</p>
+<p>//APK 签名并设置签名钥匙名：testkey、shared、platform、media<br />
+apksigner(&#8220;1.apk&#8221;, &#8220;1_OK.apk&#8221;, &#8220;testkey&#8221;, b)</p>
+<p>说明：<br />
+输入被签名文件目录，输入签名后文件目录，输入签名钥匙名，返回是否成功返回字符：“true”或 “false”</p>
+<p>【nvw 创建动态控件】<br />
+用法：<br />
+//创建文本控件<br />
+nvw(&#8220;textv&#8221;, b)</p>
+<p>//创建文本控件，并设置文本<br />
+nvw(&#8220;textv&#8221;, &#8220;我是文本控件&#8221;, b)</p>
+<p>//创建文本控件，并设置文本，设置控件坐标<br />
+nvw(&#8220;textv&#8221;, &#8220;我是文本控件&#8221;, 20, 90, b)</p>
+<p>//创建文本控件，并设置文本，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;textv&#8221;, &#8220;我是文本控件&#8221;, 20, 90, 3, b)</p>
+<p>//创建图片控件<br />
+nvw(&#8220;imgv&#8221;, b)</p>
+<p>//创建图片控件，设置控件坐标<br />
+nvw(&#8220;imgv&#8221;, &#8220;&#8221;, 20, 90, b)</p>
+<p>//创建图片控件，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;imgv&#8221;, &#8220;&#8221;, 20, 90, 3, b)</p>
+<p>//创建按钮控件<br />
+nvw(&#8220;btnv&#8221;, b)</p>
+<p>//创建按钮控件，并设置文本<br />
+nvw(&#8220;btnv&#8221;, &#8220;我是按钮控件&#8221;, b)</p>
+<p>//创建按钮控件，并设置文本，设置控件坐标<br />
+nvw(&#8220;btnv&#8221;, &#8220;我是按钮控件&#8221;, 20, 90, b)</p>
+<p>//创建按钮控件，并设置文本，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;btnv&#8221;, &#8220;我是按钮控件&#8221;, 20, 90, 3, b)</p>
+<p>//创建图片按钮控件<br />
+nvw(&#8220;imgbnv&#8221;, b)</p>
+<p>//创建图片按钮控件，设置控件坐标<br />
+nvw(&#8220;imgbnv&#8221;, &#8220;&#8221;, 20, 90, b)</p>
+<p>//创建图片按钮控件，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;imgbnv&#8221;, &#8220;&#8221;, 20, 90, 3, b)</p>
+<p>//创建文本框控件<br />
+nvw(&#8220;editv&#8221;, b)</p>
+<p>//创建文本框控件，并设置文本<br />
+nvw(&#8220;editv&#8221;, &#8220;我是文本框控件&#8221;, b)</p>
+<p>//创建文本框控件，并设置文本，设置控件坐标<br />
+nvw(&#8220;editv&#8221;, &#8220;我是文本框控件&#8221;, 20, 90, b)</p>
+<p>//创建文本框控件，并设置文本，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;editv&#8221;, &#8220;我是文本框控件&#8221;, 20, 90, 3, b)</p>
+<p>//创建多选控件<br />
+nvw(&#8220;cbxv&#8221;, b)</p>
+<p>//创建多选控件，并设置文本<br />
+nvw(&#8220;cbxv&#8221;, &#8220;我是多选控件&#8221;, b)</p>
+<p>//创建多选控件，并设置文本，设置控件坐标<br />
+nvw(&#8220;cbxv&#8221;, &#8220;我是多选控件&#8221;, 20, 90, b)</p>
+<p>//创建多选控件，并设置文本，设置控件坐标，并指定背景墙 ID 添加到其子控件（下例：3 为一个背景墙的 ID）<br />
+nvw(&#8220;cbxv&#8221;, &#8220;我是多选控件&#8221;, 20, 90, 3, b)</p>
+<p>说明：<br />
+输入控件标示，输入控件内容，输入位置坐标，返回新创建的控件的 ID 将赋值给变量“b”，指定 ID 添加子控件，只有背景墙 允许拥有子控件</p>
+<p>注意：<br />
+线程中如需使用该方法，请使用 nvwx 可进行线程里动态创建。</p>
+<p>【ssj 设置或修改控件事件代码】<br />
+用法：<br />
+s id = 3<br />
+ssj(id)<br />
+{<br />
+tw(&#8220;ok&#8221;)<br />
+}</p>
+<p>说明：<br />
+输入控件 Id，并将事件代码填写在 { 中 }，动态控件将触发该事件代码。</p>
+<p>【uall 获取子控件】<br />
+用法：<br />
+uall(0, b)<br />
+sgsz(b, 0, d)<br />
+tw(d)</p>
+<p>说明：<br />
+输入控件 ID，返回一个列表数组 至变量 “b”，每列数据将存储一个应用的信息，并且以 “n”隔开。Id 若设为 0 可获取所有顶级控件（不包括其子控件）</p>
+<p>其中列内容格式：<br />
+控件 ID，控件属性名，控件状态（0 为可见/8 为隐藏），控件类型</p>
+<p>【urvw 移除子控件】<br />
+用法：<br />
+urvw(3, 8)</p>
+<p>说明：<br />
+输入父控件 ID，输入子控件 ID；无返回值，将移除父控件旗下指定 ID 的子控件。</p>
+<p>【sbp 图像分割】<br />
+用法：<br />
+//载入一个图像变量，并赋值到图像变量“b”<br />
+sbp(&#8220;bf&#8221;, a, b)</p>
+<p>//载入一个用户图标，{裁剪图像区域（像素）：x 坐标:80，y 坐标:90，裁剪宽度:50，裁剪高度:60}<br />
+//并将裁剪好的赋值到图像变量“b”<br />
+sbp(&#8220;af&#8221;, &#8220;1.png&#8221;, 80, 90, 50, 60, b)</p>
+<p>//载入一个 SD 卡上的图标，{裁剪图像区域（像素）：x 坐标:80，y 坐标:90，裁剪宽度:50，裁剪高度:60}，图像旋转图像:180 度<br />
+//并将裁剪好的赋值到图像变量“b”<br />
+sbp(&#8220;sdf&#8221;, &#8220;1.png&#8221;, 80, 90, 50, 60, 180, b)</p>
+<p>说明：<br />
+三种方式载入图像，从图像变量，从用户图标，从 SD 上图标；并可设置裁剪图片；可设置图像旋转； 并赋值到新的图像变量；</p>
+<p>【bfs 保存图像】<br />
+用法：<br />
+bfs(b, &#8220;1.png&#8221;)</p>
+<p>//或 压缩比例（1 至 100）<br />
+bfs(b, 70, &#8220;1.png&#8221;)</p>
+<p>说明：<br />
+输入图像变量，输入压缩比例（1 至 100），输入保存图像的路径，图像将保存至该路径。</p>
+<p>【sdeg 启动调试模式】<br />
+用法：<br />
+sdeg(&#8220;true&#8221;)<br />
+.sdeg(&#8220;false&#8221;)<br />
+.sdeg(&#8220;no&#8221;)</p>
+<p>说明：<br />
+当值设为 &#8220;true&#8221; 时打包生成的 apk 文件，出现错误时将显示错误点的详细代码；设为 &#8220;false&#8221; 时将不会显示错误代码；该值默认为 &#8220;false&#8221;；当值为 &#8220;no&#8221; 将不会显示任何信息</p>
+<p>【fsc 文件转换字节串】<br />
+用法：<br />
+fsc(&#8220;a.txt&#8221;, b)<br />
+tw(b)</p>
+<p>说明：<br />
+输入文件路径，返回该文件的字节串。</p>
+<p>【ssc 字符串转换字节串】<br />
+用法：<br />
+ssc(&#8220;nihao&#8221;, c)<br />
+tw(c)</p>
+<p>说明：<br />
+输入字符串内容，返回该字符串的字节串。</p>
+<p>【sfc 字节串保存至文件】<br />
+用法：<br />
+fsc(&#8220;a.txt&#8221;, b)<br />
+sfc(&#8220;a2.txt&#8221;, b)</p>
+<p>说明：<br />
+输入文件路径，将字节串转换保存至该文件。</p>
+<p>【tot 获取控件图标】<br />
+用法：<br />
+s id = 4<br />
+tot(id, b)</p>
+<p>说明：<br />
+输入控件 ID，返回将赋值“b”图像变量。注：此方法仅限于 图片控件，图标按钮控件。</p>
+<p>【tzz 图像旋转】<br />
+用法：<br />
+sbp(&#8220;sdf&#8221;, &#8220;1.png&#8221;, a)<br />
+s b = 90<br />
+tzz(a, b, c)</p>
+<p>说明：<br />
+输入被旋转图像变量，输入旋转度数（逆向旋转数为负数），返回将赋值“c”图像变量。</p>
+<p>【tsf 图像缩放】<br />
+用法：<br />
+sbp(&#8220;sdf&#8221;, &#8220;1.png&#8221;, a)</p>
+<p>//按照倍增缩放，值小于则为缩小，否则为放大<br />
+s b = 2<br />
+tsf(a, b, c)</p>
+<p>//指定高度与宽度缩放<br />
+s w = 100<br />
+s h = 200<br />
+tsf(a, w, h, c)</p>
+<p>说明：<br />
+输入被缩放图像变量，输入缩放倍数 或 指定图像高度与宽度缩放，返回将赋值“c”图像变量。</p>
+<p>【tfz 图像反转】<br />
+用法：<br />
+sbp(&#8220;sdf&#8221;, &#8220;1.png&#8221;, a)<br />
+s b = &#8220;x&#8221;<br />
+tfz(a, b, c)</p>
+<p>s b = &#8220;y&#8221;<br />
+tfz(a, b, c)</p>
+<p>说明：<br />
+输入被反转图像变量，输入反转方式 x 为水平 y 为垂直，返回将赋值“c”图像变量。</p>
+<p>【底层背景设置】</p>
+<p>说明：<br />
+在设计界面，不选择控件的情况。选择属性可设置底层类型。</p>
+<p>LinearLayout：方便控件设置全屏，支持设置界面尺寸 -1 可适用于 列表控件，浏览器控件。此底层控件界面不可滑动，高度超出界面部分将不显示。</p>
+<p>ScrollView：此底层界面可滑动，高度超出界面任可显示在界面。但不适用于浏览器控件，以及列表控件。</p>
+<p>【sxb 写入剪切板】<br />
+用法：<br />
+s a = &#8220;nihao&#8221;<br />
+sxb(a)</p>
+<p>说明：<br />
+可用于复制到剪切板，其他应用可获取到此数据。</p>
+<p>【shb 获取剪切板】<br />
+用法：<br />
+shb(a)<br />
+tw(a)</p>
+<p>说明：<br />
+可获取剪切板数据，得到其他地方写入的剪切板数据。</p>
+<p>【tcc 获取图像变量尺寸】<br />
+用法：<br />
+sbp(&#8220;sdf&#8221;, &#8220;1.png&#8221;, a)<br />
+s b = &#8220;x&#8221;<br />
+tcc(a, b, c)<br />
+tw(c)</p>
+<p>s b = &#8220;y&#8221;<br />
+tcc(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+获取图像变量的 x 宽度 和 y 高度。</p>
+<p>【sjxx 获取手机信息】<br />
+用法：<br />
+sjxx(a)<br />
+sgsz(a, 0, d)<br />
+tw(d)</p>
+<p>说明：<br />
+获取手机基本信息，将返回一个数组到赋值变量“a”，数组格式如下：</p>
+<p>数据格式：（真实数据 n 旁边将不没有空格）</p>
+<p>CPU 型号 n CPU 频率<br />
+屏幕宽度 n 屏幕高度 n 分辨率宽度 n 分辨率高度<br />
+手机 IMEI 号 n 手机 IESI 号 n 手机型号 n 手机品牌 n 手机 SDK n 手机号码</p>
+<p>【usjxm 手机休眠】<br />
+用法：<br />
+usjxm(&#8220;false&#8221;)</p>
+<p>说明：<br />
+设置后手机将不休眠，不锁屏。默认为 true 需要休眠。</p>
+<p>【ufnsui 线程更新界面】<br />
+用法：<br />
+s a = &#8220;fn mokuai.hanshu(a)&#8221;<br />
+ufnsui(a)</p>
+<p>说明：<br />
+输入并执行一个模块；可用于线程里对控件的操作，需要即时获取赋值变量等操作。</p>
+<p>=-=-=-=-=-=游戏引擎代码-=-=-=-=-=-=-=</p>
+<p>【gdr 申明游戏】<br />
+用法：<br />
+//游戏设置与申明；输入是否显示 FPS 值，渲染一帧时间，将返回游戏对象到赋值变量“gdr”。<br />
+gdr(&#8220;true&#8221;, 0.03, gdr)<br />
+//暂停游戏<br />
+gdr(gdr, &#8220;stop&#8221;)<br />
+//恢复游戏<br />
+gdr(gdr, &#8220;go&#8221;)<br />
+//结束游戏<br />
+gdr(gdr, &#8220;end&#8221;)</p>
+<p>说明：<br />
+开始制作游戏的起点工作 与 游戏的一些控制。</p>
+<p>【gse 游戏场景】<br />
+用法：<br />
+//申明一个场景<br />
+gse(gse)</p>
+<p>//添加景层<br />
+s hs = &#8220;fn mokuai.hanshu(a)&#8221;<br />
+gse(gse, hs, hs, hs, hs)</p>
+<p>//运行场景<br />
+gse(gdr, gse)</p>
+<p>//替换一个游戏场景，将正在运行的终止。<br />
+gse(gdr, &#8220;repl&#8221;, gse)</p>
+<p>//暂停当前的游戏场景，执行另一个游戏场景<br />
+gse(gdr, &#8220;push&#8221;, gse)</p>
+<p>说明：<br />
+游戏场景相关操作。</p>
+<p>【gseset 游戏场景设置】<br />
+用法：<br />
+//申明一个场景<br />
+gse(gse)</p>
+<p>//设置游戏场景停止当前所有动作<br />
+gseset(gse, &#8220;stop&#8221;)</p>
+<p>//移除自身<br />
+gseset(gse, &#8220;del&#8221;)</p>
+<p>说明：<br />
+游戏场景的一些设置</p>
+<p>【gcppm 激活触碰事件】<br />
+用法：<br />
+gcppm(&#8220;true&#8221;)</p>
+<p>说明：<br />
+设置游戏是否激活界面触碰事件，默认为 false</p>
+<p>【gcxy 定点坐标】<br />
+用法：<br />
+//定位一个坐标，像素 100*200<br />
+gcxy(100, 200, a)</p>
+<p>//打印一个定点坐标<br />
+gcxy(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+定位一个点位坐标。</p>
+<p>【gcxyadd 定点坐标相加】<br />
+用法：<br />
+gcxy(100, 200, a1)<br />
+gcxy(200, 100, a2)<br />
+gcxyadd(a1, a2, a3)</p>
+<p>gcxy(a3, b)<br />
+tw(b)</p>
+<p>【gcxysub 定点坐标相减】<br />
+用法：<br />
+gcxy(200, 100, a1)<br />
+gcxy(100, 200, a2)<br />
+gcxysub(a1, a2, a3)</p>
+<p>gcxy(a3, b)<br />
+tw(b)</p>
+<p>【gcxyget 定点坐标赋值】<br />
+用法：<br />
+gcxy(100, 200, a)<br />
+gcxyget(a, x, y)<br />
+s(&#8220;X:&#8221; + x + &#8221; Y:&#8221; + y, xy)<br />
+tw(xy)</p>
+<p>说明：<br />
+输入定点坐标，输入赋值 X 值，输入赋值 Y 值。注意的是，这里是需要输入两个赋值变量。</p>
+<p>【gcsize 范围大小】<br />
+用法：<br />
+//设置一个范围，像素 100*200<br />
+gcsize(100, 200, a)</p>
+<p>//打印一个范围坐标<br />
+gcsize(a, b)<br />
+tw(b)</p>
+<p>【gcsizeget 范围大小赋值】<br />
+用法：<br />
+gcsize(100, 200, a)</p>
+<p>gcsizeget(a, w, h)<br />
+s(&#8220;W:&#8221; + w + &#8221; H:&#8221; + h, wh)<br />
+tw(wh)</p>
+<p>【gcxxyy 矩形范围坐标】<br />
+用法：<br />
+//输入设置四角坐标<br />
+gcxxyy(100, 200, 300, 400, c)<br />
+//输入一个定点坐标，输入一个范围大小<br />
+gcxy(100, 200, a1)<br />
+gcsize(300, 400, b1)<br />
+gcxxyy(a1, b1, c1)</p>
+<p>//打印一个矩形范围坐标<br />
+gcxxyy(c, b)<br />
+tw(b)</p>
+<p>【gcxxyyget 矩形坐标赋值】<br />
+用法：<br />
+gcxxyy(100, 200, 300, 400, a)<br />
+gcxxyyget(a, x, y, xx, yy)</p>
+<p>s(&#8220;X:&#8221; + x + &#8221; Y:&#8221; + y + &#8221; XX:&#8221; + xx + &#8221; YY:&#8221; + yy, xxyy)<br />
+tw(xxyy)</p>
+<p>//赋值返回一个 定点坐标，一个范围大小<br />
+gcxy(100, 200, a1)<br />
+gcsize(300, 400, b1)<br />
+gcxxyy(a1, b1, c1)</p>
+<p>//此处将赋值变量定点坐标，范围大小<br />
+gcxxyyget(c1, a2, b2)</p>
+<p>gcxyget(a2, x, y)<br />
+gcsizeget(b2, xx, yy)<br />
+s(&#8220;X:&#8221; + x + &#8221; Y:&#8221; + y + &#8221; XX:&#8221; + xx + &#8221; YY:&#8221; + yy, xxyy)<br />
+tw(xxyy)</p>
+<p>【gcxxyyin 矩形重叠】<br />
+用法：<br />
+gcxxyy(100, 200, 300, 400, a)<br />
+gcxxyy(200, 200, 600, 400, b)<br />
+gcxxyyin(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+可用于判断两个区域范围是否重叠。赋值变量“c”值为 false 或 true</p>
+<p>【gcmap 加载地图】<br />
+用法：<br />
+//加载用户地图文件<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)</p>
+<p>//加载 SD 卡上地图文件<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;sdf&#8221;, map)</p>
+<p>//加载地图并设置视角<br />
+gcxy(100, 200, xy)<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;sdf&#8221;, xy, map)</p>
+<p>//设置地图视角位置<br />
+gcxy(100, 200, xy)<br />
+gcmap(map, xy)</p>
+<p>说明：<br />
+输入地图文件，输入加载位置，返回地图对象到赋值变量“a”</p>
+<p>地图说明：<br />
+地图需要自己设计，建议版本（Tiled v5.3.2）设计地图相关教程，请加入此帮助文件尾部的 QQ 群。</p>
+<p>【gcmapadd 添加地图元素】<br />
+用法：<br />
+//加载一个精灵<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)<br />
+//元素到地图界面<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)<br />
+gcmapadd(map, gs)</p>
+<p>//元素到地图界面，并且设置层次序<br />
+gcmapadd(map, gs, 1)</p>
+<p>说明：<br />
+可添加精灵，动作等 到地图界面。</p>
+<p>【gcadd 添加游戏元素】<br />
+用法：<br />
+//元素到游戏界面<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)<br />
+gcadd(map)</p>
+<p>//元素到游戏界面，并且设置层次序<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;sdf&#8221;, map2)<br />
+gcadd(map2, 1)</p>
+<p>说明：<br />
+可添加游戏精灵，地图，动作等 到游戏界面。</p>
+<p>【gcmapget 地图数据获取】<br />
+用法：<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)</p>
+<p>//获取地图的视角坐标，返回一个定点坐标<br />
+gcmapget(map, &#8220;xy&#8221;, xy)<br />
+//获取地图的目前像素大小，返回一个范围坐标<br />
+gcmapget(map, &#8220;size&#8221;, size)<br />
+//获取地图的原始像素大小，返回一个范围坐标<br />
+gcmapget(map, &#8220;sizey&#8221;, sizey)<br />
+//获取地图是否为可视，返回字符 “true”或“false”<br />
+gcmapget(map, &#8220;show&#8221;, show)<br />
+//获取地图是否正在运行动作，返回字符 “true”或“false”<br />
+gcmapget(map, &#8220;run&#8221;, run)</p>
+<p>说明：<br />
+可获取地图数据参数，用户进行判断。</p>
+<p>【gcmapset 地图数据设置】<br />
+用法：<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)</p>
+<p>//设置地图的视角坐标<br />
+gcxy(0, 0, xy)<br />
+gcmapset(map, &#8220;xy&#8221;, xy)<br />
+//设置地图的目前像素大小<br />
+gcsize(100, 200, size)<br />
+gcmapset(map, &#8220;size&#8221;, size)<br />
+//设置地图是否为可视<br />
+s show = &#8220;true&#8221;<br />
+gcmapset(map, &#8220;show&#8221;, show)<br />
+//设置地图执行动作<br />
+gcmapset(map, &#8220;run&#8221;, action)<br />
+//设置地图停止当前所有动作<br />
+gcmapset(map, &#8220;stop&#8221;)<br />
+//移除地图自身<br />
+gcmapset(map, &#8220;del&#8221;)</p>
+<p>说明：<br />
+地图设置或执行相关数据。</p>
+<p>【gclayer 获取地图层】<br />
+用法：<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)<br />
+gclayer(map, &#8220;ws&#8221;, layer)</p>
+<p>说明：<br />
+输入地图对象，层标识，赋值变量。将返回一个地图层对象。</p>
+<p>【gclayercon 地图层碰撞】<br />
+说明：<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)<br />
+gclayer(map, &#8220;ws&#8221;, layer)</p>
+<p>//输入坐标判断<br />
+gcxy(100, 200, xy)<br />
+gclayercon(layer, xy, c)<br />
+tw(c)</p>
+<p>//输入方块位置判断；第 6 行，第 5 个方块<br />
+gclayercon(layer, 5, 6, c2)<br />
+tw(c2)</p>
+<p>说明：<br />
+输入地图层对象，定点坐标，赋值变量。将返回一个赋值变量，变量当变量等于“0”说明无碰撞，反之存在碰撞。</p>
+<p>【gcimg 图像对象加载】<br />
+用法：<br />
+//载入一个图像变量<br />
+gcimg(b, &#8220;bf&#8221;, img)</p>
+<p>//载入一个用户图标<br />
+gcimg(&#8220;1.png&#8221;, &#8220;af&#8221;, img)</p>
+<p>//载入一个 SD 卡上的图标<br />
+gcimg(&#8220;1.png&#8221;, &#8220;sdf&#8221;, img)</p>
+<p>说明：<br />
+输入图像路径或图像变量，输入图像来源位置，返回一个图像对象赋值变量“img”</p>
+<p>【gcs 精灵对象加载】<br />
+用法：<br />
+//加载根据常规方式加载图像，并支持位置 bf，af，sdf<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)</p>
+<p>//继承上面的基础，加载精灵并设置定点坐标位置。<br />
+gcxy(100, 200, xy)<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, xy, gs)</p>
+<p>//根据图像对象加载<br />
+gcimg(b, &#8220;bf&#8221;, img)<br />
+gcs(img, gs)</p>
+<p>//根据图像对象加载，并设置矩形坐标选取图像范围<br />
+gcimg(b, &#8220;bf&#8221;, img)<br />
+gcs(img, 0, 0, 50, 60, gs)</p>
+<p>说明：<br />
+游戏精灵是游戏的灵魂，游戏中常规会动的角色，都由精灵进行掩饰表演。</p>
+<p>【gcsget 精灵数据获取】<br />
+用法：<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)</p>
+<p>//获取精灵坐标，返回一个定点坐标<br />
+gcsget(gs, &#8220;xy&#8221;, xy)<br />
+//获取精灵像素大小，返回一个范围坐标<br />
+gcsget(gs, &#8220;size&#8221;, size)<br />
+//获取精灵矩形坐标，返回一个矩形坐标<br />
+gcsget(gs, &#8220;xxyy&#8221;, xxyy)<br />
+//获取精灵是否为可视，返回字符 “true”或“false”<br />
+gcsget(gs, &#8220;show&#8221;, show)<br />
+//获取精灵是否正在运行动作，返回字符 “true”或“false”<br />
+gcsget(gs, &#8220;run&#8221;, run)<br />
+//获取精灵的透明度，返回数值<br />
+gcsget(gs, &#8220;opacity&#8221;, opacity)<br />
+//获取精灵的颜色，例如：#ffffff<br />
+gcsget(gs, &#8220;color&#8221;, color)<br />
+//获取精灵是否 X 轴反转，返回字符 “true”或“false”<br />
+gcsget(gs, &#8220;flipx&#8221;, flipx)<br />
+//获取精灵是否 Y 轴反转，返回字符 “true”或“false”<br />
+gcsget(gs, &#8220;flipy&#8221;, flipy)<br />
+//获取精灵是否反转，返回两个赋值变量，返回字符 “true”或“false”<br />
+gcsget(gs, &#8220;flip&#8221;, flipx, flipy)</p>
+<p>//获取自我中心触碰坐标，返回以该精灵为中心与 一个定点坐标的距离。<br />
+//输入精灵对象，输入标示，输入定点坐标，返回一个定点坐标。<br />
+gcxy(100, 200, xy)<br />
+gcsget(gs, &#8220;zxxy&#8221;, xy, xy2)</p>
+<p>说明：<br />
+获取精灵的相关数据。</p>
+<p>【gcsset 精灵数据设置】<br />
+用法：<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)</p>
+<p>//设置精灵坐标，输入一个定点坐标<br />
+gcxy(100, 200, xy)<br />
+gcsset(gs, &#8220;xy&#8221;, xy)<br />
+//设置精灵像素大小，输入一个范围坐标<br />
+gcsize(300, 400, size)<br />
+gcsset(gs, &#8220;size&#8221;, size)<br />
+//设置精灵是否为可视，输入字符 “true”或“false”<br />
+gcsset(gs, &#8220;show&#8221;, &#8220;true&#8221;)<br />
+//设置精灵要运行动作，输入动作<br />
+gcsset(gs, &#8220;run&#8221;, action)<br />
+//设置精灵的透明度，输入透明数值<br />
+gcsset(gs, &#8220;opacity&#8221;, 180)<br />
+//设置精灵的颜色，例如：#ffffff<br />
+gcsset(gs, &#8220;color&#8221;, &#8220;#ffffff&#8221;)<br />
+//设置精灵是否 X 轴反转，输入字符 “true”或“false”<br />
+gcsset(gs, &#8220;flipx&#8221;, &#8220;true&#8221;)<br />
+//设置精灵是否 Y 轴反转，输入字符 “true”或“false”<br />
+gcsset(gs, &#8220;flipy&#8221;, &#8220;false&#8221;)<br />
+//设置精灵是否反转，输入字符 “true”或“false”<br />
+gcsset(gs, &#8220;flip&#8221;, &#8220;true&#8221;, &#8220;false&#8221;)</p>
+<p>//停止所有正在运行的操作和调度<br />
+gcsset(gs, &#8220;stop&#8221;)<br />
+//移除精灵自身<br />
+gcsset(gs, &#8220;del&#8221;)</p>
+<p>说明：<br />
+设置精灵的相关数据。</p>
+<p>【gcsin 精灵重叠】<br />
+用法：<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs2)<br />
+gcsin(gs, gs2, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于判断两个精灵的矩形体积区域是否重叠，可用于做精灵碰撞探测。赋值变量“c”值为 false 或 true</p>
+<p>【gcatn 图像序列化】<br />
+用法：<br />
+gcatn(&#8220;txxlh&#8221;, 0.6, ant)</p>
+<p>说明：<br />
+申明一个图像序列化，输入序列化自定义标识，输入序列化播放时隔。返回一个赋值变量图像序列化对象。</p>
+<p>【gcatnadd 图像序列化添加数据】<br />
+用法：<br />
+//输入图像序列化对象，输入图像对象，输入矩形坐标选取图像范围<br />
+gcimg(&#8220;1.png&#8221;, &#8220;af&#8221;, img)<br />
+gcxxyy(0, 0, 50, 60, xxyy)<br />
+gcatnadd(ant, img, xxyy)</p>
+<p>//输入图像序列化对象，输入图像路径，输入图像加载位置，输入矩形坐标选取图像范围<br />
+gcatnadd(ant, &#8220;1.png&#8221;, &#8220;af&#8221;, xxyy)</p>
+<p>//输入图像序列化对象，输入图像对象，输入矩形四个坐标选取图像范围<br />
+gcimg(&#8220;1.png&#8221;, &#8220;af&#8221;, img)<br />
+gcatnadd(ant, img, 0, 0, 50, 60)</p>
+<p>//输入图像序列化对象，输入图像对象<br />
+gcimg(&#8220;1.png&#8221;, &#8220;af&#8221;, img)<br />
+gcatnadd(ant, img)</p>
+<p>说明：<br />
+向图像序列化增加图像数据。</p>
+<p>【gcsde 定时器】<br />
+用法：<br />
+s hs = &#8220;fn mokuai.hanshu(a)&#8221;<br />
+//设置一个定时器，将持续执行；输入执行代码，输入定时器自定义标识，输入每隔多久执行一次（0.6 秒）<br />
+gcsde(hs, &#8220;dingshiqi&#8221;, 0.6)</p>
+<p>//注销一个定时器，将停止定时执行代码。<br />
+gcsde(&#8220;dingshiqi&#8221;)</p>
+<p>说明：<br />
+定时器大多用于更新游戏界面。游戏界面是不允许用线程进行更新，只可用定时器去实现界面更新。</p>
+<p>【gcsdeset 定时器设置】<br />
+用法：<br />
+//注销所有定时器<br />
+gcsdeset(&#8220;unall&#8221;)</p>
+<p>说明：<br />
+可注销所有定时器。</p>
+<p>【gcame 动画动作】<br />
+用法：<br />
+gcatn(&#8220;txxlh&#8221;, 0.6, ant)<br />
+gcatnadd(ant, img, 0, 0, 50, 60)</p>
+<p>//将图像序列化转换成动画<br />
+gcame(ant, ame)</p>
+<p>//将图像序列化转换成动画，并且动画结束将恢复原始帧作为动画结束<br />
+gcame(ant, &#8220;true&#8221;, ame)</p>
+<p>//将图像序列化转换成动画，并且动画结束将恢复原始帧作为动画结束，并且设置动画的持续时间。<br />
+gcame(ant, &#8220;true&#8221;, ame, &#8220;2&#8221;)</p>
+<p>说明：<br />
+首先创建图像序列化，然后转换为动画动作。返回一个赋值变量“ant”作为动画动作对象</p>
+<p>【gcsqe 队列执行动作】<br />
+用法：<br />
+gcatn(&#8220;txxlh&#8221;, 0.6, ant)<br />
+gcatnadd(ant, img, 0, 0, 50, 60)</p>
+<p>gcsqe(sqe, ant, ant,&#8230;&#8230;..)</p>
+<p>说明：<br />
+队列执行可将多个动作一次顺序执行，不限设置个数。返回一个赋值变量“sqe”作为队列执行对象。<br />
+注意的是必须 2 个动作以上。</p>
+<p>【gcsan 同时执行动作】<br />
+用法：<br />
+gcatn(&#8220;txxlh&#8221;, 0.6, ant)<br />
+gcatnadd(ant, img, 0, 0, 50, 60)</p>
+<p>gcsan(san, ant, ant,&#8230;&#8230;..)</p>
+<p>说明：<br />
+同时执行可将多个动作同时执行，不限设置个数。返回一个赋值变量“san”作为同时执行对象。<br />
+注意的是必须 2 个动作以上。</p>
+<p>【gccfnd 回调动作】<br />
+用法：<br />
+gcatn(&#8220;txxlh&#8221;, 0.6, ant)<br />
+gcatnadd(ant, img, 0, 0, 50, 60)</p>
+<p>s hs = &#8220;fn mokuai.hanshu(a)&#8221;<br />
+gccfnd(hs, cfnd)<br />
+gcsqe(san, ant, ant,&#8230;&#8230;.., cfnd)</p>
+<p>说明：<br />
+执行到尾部后，将执行回调代码里的 模块。<br />
+一般用于精灵动作完毕后的释放内存。（精灵例如：子弹）</p>
+<p>【gccsft/gccsfb 缩放的动作】<br />
+用法：<br />
+//输入过程时间，输入缩放倍数，输入赋值变量“b”作为动作的对象<br />
+gccsft(2, 3, b)</p>
+<p>//输入过程时间，输入 X 轴缩放倍数，输入 X 轴缩放倍数，输入赋值变量“b”作为动作的对象<br />
+s x = 2<br />
+s y = 4<br />
+gccsft(2, x, y, b)</p>
+<p>//gccsfb 用法与上述一致，效果区别与 gccsfb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵缩放动作。</p>
+<p>【gccxzt/gccxzb 旋转的动作】<br />
+用法：<br />
+//输入过程时间，输入要选择的角度，输入赋值变量“b”作为动作的对象<br />
+gccxzt(2, 150, b)</p>
+<p>//gccxzb 用法与上述一致，效果区别与 gccxzb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的旋转动作。</p>
+<p>【gccqxt/gccqxb 倾斜的动作】<br />
+用法：<br />
+//输入过程时间，输入要选择的角度，输入赋值变量“b”作为动作的对象<br />
+gccqxt(2, 10, 10, b)</p>
+<p>//gccqxb 用法与上述一致，效果区别与 gccqxb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的倾斜动作。</p>
+<p>【gcctyt/gcctyb 跳跃的动作】<br />
+用法：<br />
+gcxy(100, 200, xy)<br />
+//输入过程时间，掉落的定点坐标，跳的高度，跳跃的次数，赋值变量“b”作为动作的对象<br />
+gcctyt(2, xy, 150, 2, b)</p>
+<p>//gcctyb 用法与上述一致，效果区别与 gcctyb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的跳跃动作。</p>
+<p>【gccydt/gccydb 移动的动作】<br />
+用法：<br />
+gcxy(100, 200, xy)<br />
+//输入过程时间，移动的定点坐标，赋值变量“b”作为动作的对象<br />
+gccydt(2, xy, b)</p>
+<p>//gccydb 用法与上述一致，效果区别与 gccydb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的移动动作。</p>
+<p>【gccbrt/gccbrb 塞尔曲线运动的动作】<br />
+用法：<br />
+gcxy(100, 200, xy1)<br />
+gcxy(100, 200, xy2)<br />
+gcxy(100, 200, end)<br />
+//输入过程时间，坐标 1，坐标 2，结束坐标，赋值变量“b”作为动作的对象<br />
+gccbrt(2, xy1, xy2, end, b)</p>
+<p>//gccbrb 用法与上述一致，效果区别与 gccbrb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的塞尔曲线运动的动作。</p>
+<p>【gccjbcx/gccjbxs 渐变出现/渐变消失】<br />
+用法：<br />
+//渐变出现；输入过程时间，输入赋值变量“b”作为动作的对象<br />
+gccjbcx(2, b)</p>
+<p>//渐变消失；输入过程时间，输入赋值变量“b”作为动作的对象<br />
+gccjbxs(2, b)</p>
+<p>说明：<br />
+可控制逐渐出现与消失的动作。</p>
+<p>【gccscbht/gccscbhb 色彩变化的动作】<br />
+用法：<br />
+//输入过程时间，输入变化的颜色，输入赋值变量“b”作为动作的对象<br />
+gccscbht(2, &#8220;#000000&#8221;, b)</p>
+<p>//gccscbhb 用法与上述一致，效果区别与 gccscbhb 是在原有的基础上累加。</p>
+<p>说明：<br />
+可用于游戏精灵的色彩变化的动作。</p>
+<p>【gccss 闪烁的动作】<br />
+用法：<br />
+//输入过程时间，输入闪烁次数，输入赋值变量“b”作为动作的对象<br />
+gccss(2, 6, b)</p>
+<p>说明：<br />
+可用于游戏精灵的闪烁的动作。</p>
+<p>【gccyc 延迟的动作】<br />
+用法：<br />
+//输入过程时间，输入赋值变量“b”作为动作的对象<br />
+gccyc(2, b)</p>
+<p>说明：<br />
+可将此动作放入 队列执行对象 中， 执行到该动作时会延迟时间，再执行下一个动作。</p>
+<p>【gccqmxz 球面旋转】<br />
+用法：<br />
+//输入过程时间，起始半径，半径差，起始 z 角，旋转 z 角的差，起始 x 角，旋转 x 角的差<br />
+gccqmxz(2, 10, 0, 45, 180, 90, 0, b)</p>
+<p>说明：<br />
+可用于游戏精灵的球面坐标轨迹进行旋转的动作。</p>
+<p>【gccgs 跟随的动作】<br />
+用法：<br />
+//创建一个被跟随精灵<br />
+gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)</p>
+<p>//动作跟随“gs”精灵；输入被跟随精灵，输入赋值变量“b”作为动作的对象<br />
+gccgs(gs, b)</p>
+<p>//动作跟随“gs”精灵；输入被跟随精灵，输入跟随有效范围，输入赋值变量“b”作为动作的对象<br />
+gcxxyy(0, 0, 960, 320, xxyy)<br />
+gccgs(gs, xxyy, b)</p>
+<p>说明：<br />
+跟随动作指跟随目标精灵，模仿其行动动作。</p>
+<p>【gccftlks/gccftljs/gccftl 反弹动作】<br />
+用法：<br />
+//开始具有反弹力；输入一个移动的动作，输入赋值变量“b”作为动作的对象<br />
+gccftlks(dz, b)</p>
+<p>//gccftljs 用法与上述一致，效果区别与 gccftljs 是在尾部进行反弹。<br />
+//gccftl 用法与上述一致，效果区别与 gccftl 是在开始和尾部进行反弹。</p>
+<p>说明：<br />
+赋予与动作在指定时机进行反弹的行为。</p>
+<p>【gcchlks/gcchljs/gcchl 回力动作】<br />
+用法：<br />
+//开始具有回力；输入一个移动的动作，输入赋值变量“b”作为动作的对象<br />
+gcchlks(dz, b)</p>
+<p>//gcchljs 用法与上述一致，效果区别与 gcchljs 是在尾部进行回力。<br />
+//gcchl 用法与上述一致，效果区别与 gcchl 是在开始和尾部进行回力。</p>
+<p>说明：<br />
+赋予与动作在指定时机进行回力的行为。（似与 后退几步再奔跑）</p>
+<p>【gcctxks/gcctxjs/gcctx 弹性动作】<br />
+用法：<br />
+//开始具有弹性；输入一个移动的动作，输入赋值变量“b”作为动作的对象<br />
+gcctxks(dz, b)</p>
+<p>//gcctxjs 用法与上述一致，效果区别与 gcctxjs 是在尾部发挥弹性。<br />
+//gcctx 用法与上述一致，效果区别与 gcctx 是在开始和尾部发挥弹性。</p>
+<p>说明：<br />
+赋予与动作在指定时机进行反弹的行为。</p>
+<p>【gcchmks/gcchmjs/gcchm 缓慢动作】<br />
+用法：<br />
+//开始具有缓慢效果；输入一个移动的动作，输入赋值变量“b”作为动作的对象<br />
+gcchmks(dz, b)</p>
+<p>//gcchmjs 用法与上述一致，效果区别与 gcchmjs 是在尾部发挥缓慢效果。<br />
+//gcchm 用法与上述一致，效果区别与 gcchm 是在开始和尾部发挥缓慢效果。</p>
+<p>说明：<br />
+赋予与动作在指定时机进行缓慢效果。</p>
+<p>【gcckmks/gcckmjs/gcckm 变速动作】<br />
+用法：<br />
+//具有由慢到快效果；输入一个移动的动作，输入赋值变量“b”作为动作的对象<br />
+gcckmks(dz, b)</p>
+<p>//gcckmjs 用法与上述一致，效果区别与 gcckmjs 是由快到慢的效果。<br />
+//gcckm 用法与上述一致，效果区别与 gcckm 是动作由慢到快再快到慢的效果。</p>
+<p>说明：<br />
+赋予与动作在指定时机进行调整速度的效果。</p>
+<p>【gccsdjb 速度加倍】<br />
+用法：<br />
+//输入指定动作，输入加速倍数，输入赋值变量“b”作为动作的对象<br />
+gccsdjb(dz, 3, b)</p>
+<p>说明：<br />
+让目标动作运行速度加倍！</p>
+<p>【gcccf 重复运行动作】<br />
+用法：<br />
+//输入指定动作，输入重复次数，输入赋值变量“b”作为动作的对象<br />
+gcccf(dz, 3, b)</p>
+<p>说明：<br />
+让目标动作进行重复运动。</p>
+<p>【gcccfyj 不停重复运行】<br />
+用法：<br />
+//输入指定动作，输入赋值变量“b”作为动作的对象<br />
+gcccfyj(dz, b)</p>
+<p>说明：<br />
+将不停的运动目标动作。（可调用精灵停止所有动作，即可停止该重复动作）</p>
+<p>【gccfz 反转动作】<br />
+用法：<br />
+//X 轴反转精灵<br />
+gccfz(&#8220;x&#8221;, &#8220;true&#8221;, b)</p>
+<p>//Y 轴反转精灵<br />
+gccfz(&#8220;y&#8221;, &#8220;true&#8221;, b)</p>
+<p>说明：<br />
+可用于精灵队列执行动作中处理反转动作。</p>
+<p>【gcckj 可见动作】<br />
+用法：<br />
+//精灵设为可见<br />
+gcckj(&#8220;true&#8221;, b)</p>
+<p>//精灵设为隐藏<br />
+gcckj(&#8220;false&#8221;, b)</p>
+<p>说明：<br />
+可用于精灵队列执行动作中处理可见动作。</p>
+<p>【gct 文本精灵】<br />
+用法：<br />
+//输入文本，自定义标识，字符尺寸，文本颜色，赋值变量“b”作为动作的对象<br />
+gct(&#8220;我是文本&#8221;, &#8220;wenben1&#8221;, &#8220;30&#8221;, &#8220;#000000&#8221;, b)</p>
+<p>//带设置文本的显示文字<br />
+gcxy(100, 100, xy)<br />
+gct(&#8220;我是文本&#8221;, &#8220;wenben1&#8221;, &#8220;30&#8221;, &#8220;#000000&#8221;, xy, b)</p>
+<p>//带设置文本的显示文字、设置文本显示的矩形范围<br />
+gcxy(100, 100, xy)<br />
+gcxxyy(100, 200, 300, 400, xxyy)<br />
+gct(&#8220;我是文本&#8221;, &#8220;wenben1&#8221;, &#8220;30&#8221;, &#8220;#000000&#8221;, xy, xxyy, b)</p>
+<p>说明：<br />
+用于游戏中显示文本内容。</p>
+<p>【gctget 获取文本精灵数据】<br />
+用法：<br />
+gct(&#8220;我是文本&#8221;, &#8220;wenben1&#8221;, &#8220;30&#8221;, &#8220;#000000&#8221;, gs)</p>
+<p>//获取精灵文本，返回文本字符<br />
+gctget(gs, &#8220;text&#8221;, xy)<br />
+//获取精灵坐标，返回一个定点坐标<br />
+gctget(gs, &#8220;xy&#8221;, xy)<br />
+//获取精灵像素大小，返回一个范围坐标<br />
+gctget(gs, &#8220;size&#8221;, size)<br />
+//获取精灵矩形坐标，返回一个矩形坐标<br />
+gctget(gs, &#8220;xxyy&#8221;, xxyy)<br />
+//获取精灵是否为可视，返回字符 “true”或“false”<br />
+gctget(gs, &#8220;show&#8221;, show)<br />
+//获取精灵是否正在运行动作，返回字符 “true”或“false”<br />
+gctget(gs, &#8220;run&#8221;, run)<br />
+//获取精灵的透明度，返回数值<br />
+gctget(gs, &#8220;opacity&#8221;, opacity)<br />
+//获取精灵的颜色，例如：#ffffff<br />
+gctget(gs, &#8220;color&#8221;, color)<br />
+//获取精灵是否 X 轴反转，返回字符 “true”或“false”<br />
+gctget(gs, &#8220;flipx&#8221;, flipx)<br />
+//获取精灵是否 Y 轴反转，返回字符 “true”或“false”<br />
+gctget(gs, &#8220;flipy&#8221;, flipy)<br />
+//获取精灵图像范围，返回一个矩形坐标<br />
+gctget(gs, &#8220;imgxxyy&#8221;, xxyy)</p>
+<p>说明：<br />
+文本精灵可用于游戏文本显示。</p>
+<p>【gctset 设置文本精灵数据】<br />
+用法：</p>
+<p>//设置精灵文本，输入文本字符<br />
+gctset(gs, &#8220;text&#8221;, &#8220;我是文本哦&#8221;)<br />
+//设置精灵坐标，输入一个定点坐标<br />
+gcxy(100, 200, xy)<br />
+gctset(gs, &#8220;xy&#8221;, xy)<br />
+//设置精灵像素大小，输入一个范围坐标<br />
+gcsize(300, 400, size)<br />
+gctset(gs, &#8220;size&#8221;, size)<br />
+//设置精灵是否为可视，输入字符 “true”或“false”<br />
+gctset(gs, &#8220;show&#8221;, &#8220;true&#8221;)<br />
+//设置精灵要运行动作，输入动作<br />
+gctset(gs, &#8220;run&#8221;, action)<br />
+//设置精灵的透明度，输入透明数值<br />
+gctset(gs, &#8220;opacity&#8221;, 180)<br />
+//设置精灵的颜色，例如：#ffffff<br />
+gctset(gs, &#8220;color&#8221;, &#8220;#ffffff&#8221;)<br />
+//设置精灵是否 X 轴反转，输入字符 “true”或“false”<br />
+gctset(gs, &#8220;flipx&#8221;, &#8220;true&#8221;)<br />
+//设置精灵是否 Y 轴反转，输入字符 “true”或“false”<br />
+gctset(gs, &#8220;flipy&#8221;, &#8220;false&#8221;)<br />
+//设置精灵图像对象，输入一个图像对象<br />
+gctset(gs, &#8220;img&#8221;, img)<br />
+//设置精灵图像范围，输入一个矩形坐标<br />
+gctset(gs, &#8220;imgxxyy&#8221;, xxyy)</p>
+<p>//停止所有正在运行的操作和调度<br />
+gctset(gs, &#8220;stop&#8221;)<br />
+//移除精灵自身<br />
+gctset(gs, &#8220;del&#8221;)</p>
+<p>【gcyfgdh 分割动画】<br />
+用法：<br />
+gcimg(&#8220;1.png&#8221;, &#8220;sdf&#8221;, img)</p>
+<p>//输入图像标示名，被序列化图像，动画时间，单个图像宽度，单个图像高度，每行多少个图像，总共多少行图像，总共图像数量，赋值“b”变量为图像序列化对象（gcatn）<br />
+gcyfgdh(&#8220;name&#8221;, img, 0.6, 124, 80, 3, 1, 3, b)</p>
+<p>//输入图像标示名，被序列化图像，动画时间，偏移的 X 坐标，偏移的 Y 坐标，单个图像宽度，单个图像高度，每行多少个图像，总共多少行图像，总共图像数量，赋值“b”变量为图像序列化对象（gcatn）<br />
+gcyfgdh(&#8220;name&#8221;, img, 0.6, 80, 60, 124, 80, 3, 1, 3, b)</p>
+<p>说明：<br />
+从一个图像顺序的分割动画，前提是将动画的所有图像都该图像上。</p>
+<p>【gcyxnyg 虚拟摇杆】<br />
+用法：<br />
+gcxy(100, 100, xy)<br />
+//输入代码指令，输入自定义标识，输入定点坐标，赋值摇杆的底座的精灵，赋值摇杆的精灵<br />
+gcyxnyg(&#8220;yaogan1&#8221;, &#8220;wdxnyg&#8221;, xy, handlebase, handle)</p>
+<p>说明：<br />
+这是一个创建虚拟摇杆的内置代码，他的功能就是创建并显示出虚拟摇杆，并赋值好精灵。<br />
+摇杆底座：（100*100 像素）<br />
+摇杆：（50*50 像素）</p>
+<p>【gcyxnan 虚拟按钮】<br />
+用法：<br />
+gcxy(750, 80, xy)<br />
+//输入代码指令，输入自定义标识，输入定点坐标，输入显示字符，输入字符颜色，赋值按钮的精灵<br />
+gcyxnan(&#8220;anniu1&#8221;, &#8220;wdxnan&#8221;, xy, &#8221; A&#8221;, &#8220;#64FFFFFF&#8221;, pushbutton)</p>
+<p>说明：<br />
+这是一个创建虚拟按钮的内置代码，他的功能就是创建并显示出虚拟按钮（80*80 像素），并赋值好精灵。</p>
+<p>【gcysbkzdx 获得摇杆对象】<br />
+用法：<br />
+gcmap(&#8220;a.tmx&#8221;, &#8220;af&#8221;, map)<br />
+gcadd(map)<br />
+gclayer(map, &#8220;ws&#8221;, layer)</p>
+<p>gcs(&#8220;1.png&#8221;, &#8220;sdf&#8221;, gs)<br />
+gcxy(100, 200, xy)<br />
+gcsset(gs, &#8220;xy&#8221;, xy)<br />
+gcmapadd(map, gs)</p>
+<p>gcxy(100, 100, xy)<br />
+gcyxnyg(&#8220;yaogan1&#8221;, &#8220;wdxnyg&#8221;, xy, handlebase, handle)</p>
+<p>gcxy(200, 500, srxy)</p>
+<p>//输入摇杆精灵,摇杆底座精灵,主角精灵,地图障碍层,用户触碰定点坐标,移动速度,赋值“b”定位坐标<br />
+gcysbkzdx(handlebase,handle,gs,layer,srxy,20,b)</p>
+<p>//输入摇杆精灵,摇杆底座精灵,主角精灵,用户触碰定点坐标,移动速度,赋<br />
+值“b”定位坐标<br />
+gcysbkzdx(handlebase,handle,gs,srxy,20,b)</p>
+<p>说明：<br />
+可控制主角精灵移动，并设置障碍地图层。如果无法移动赋值“b”将为 null</p>
+<p>【slt 动态数组】<br />
+用法：<br />
+//申明一个动态数组<br />
+slt(list)</p>
+<p>//移除清空所有项<br />
+slt(list, &#8220;clear&#8221;)</p>
+<p>//获取 0 维项的数据，数组维数起点都为 0<br />
+slt(list, 0, b)</p>
+<p>说明：<br />
+申明和设置动态数组。</p>
+<p>【sltget 获取动态数组数据】<br />
+用法：<br />
+slt(list)</p>
+<p>//获取总共有多少项数据，赋值返回一个 数值<br />
+sltget(list, &#8220;size&#8221;, b)</p>
+<p>//将动态数组 转换成 数组，赋值返回一个 数组<br />
+sltget(list, &#8220;array&#8221;, b)</p>
+<p>//动态数组是否包含该数据，赋值返回 true 或 false<br />
+s a = &#8220;数据&#8221;<br />
+sltget(list, &#8220;?&#8221;, a, b)</p>
+<p>//动态数组从头开始检查是否包含该数据，赋值返回数据位置序号或 不存在返回 -1<br />
+s a = &#8220;数据&#8221;<br />
+sltget(list, &#8220;siof&#8221;, a, b)</p>
+<p>//动态数组从尾开始检查是否包含该数据，赋值返回数据位置序号或 不存在返回 -1<br />
+s a = &#8220;数据&#8221;<br />
+sltget(list, &#8220;slof&#8221;, a, b)</p>
+<p>说明：<br />
+获取动态数组相关数据。</p>
+<p>【sltset 设置动态数组数据】<br />
+用法：<br />
+slt(list)</p>
+<p>//添加数据到动态数组<br />
+s a = &#8220;数据&#8221;<br />
+sltset(list, &#8220;add&#8221;, a)</p>
+<p>//从动态数组删除 0 维项的数据，输入的是一个数据的序号<br />
+sltset(list, &#8220;deli&#8221;, 0)</p>
+<p>//从动态数组删除数据，输入的是一个数据本身<br />
+s a = &#8220;数据&#8221;<br />
+sltset(list, &#8220;dels&#8221;, a)</p>
+<p>//添加数据到动态数组，并设定插队的序号，输入要插队的维数序号<br />
+s a = &#8220;数据&#8221;<br />
+sltset(list, &#8220;add&#8221;, 0, a)</p>
+<p>//修改动态数组指定序号的数据，输入要修改的维数序号，修改该项的数据内容<br />
+s a = &#8220;数据&#8221;<br />
+sltset(list, &#8220;set&#8221;, 0, a)</p>
+<p>说明：<br />
+设置动态数组相关数据。</p>
+<p>【触碰屏幕事件与系统变量】<br />
+解说：<br />
+游戏场景设置激活触碰事件后；</p>
+<p>当用户开始触碰屏幕时，系统赋值变量：<br />
+.本次触碰的 ID<br />
+aGid<br />
+.触碰的定点坐标位置<br />
+aGxy</p>
+<p>当用户在屏幕滑动时，系统赋值变量：<br />
+.本次触碰的 ID<br />
+bGid<br />
+.触碰的定点坐标位置<br />
+bGxy</p>
+<p>当用户结束触碰屏幕时，系统赋值变量：<br />
+.本次触碰的 ID<br />
+cGid<br />
+.最后触碰的定点坐标位置<br />
+cGxy</p>
+<p>说明：<br />
+触碰的 ID，可用于判断多点触控；例如，你两只手同时都触碰屏幕，在触发事件的同时会产生不同的触碰 ID<br />
+通常用于，判断是否多点触控<br />
+========<br />
+持续</p>
+<div class="wo-entry-prev-next"><a title="iApp 教程(理论)" href="https://www.wmjrc.com/go.html?url=https://qiulai.wodemo.net/entry/333400"  rel="nofollow" >«更新</a>      <a title="iapp 教程 v1.5.5" href="https://www.wmjrc.com/go.html?url=https://qiulai.wodemo.net/file/331888"  rel="nofollow" >更旧»</a></div>
+<p>&#8212;-评论(6)&#8212;-<br />
+<a href="https://www.wmjrc.com/go.html?url=https://yigeqige.wodemo.net/"  rel="nofollow" >一个奇鸽 (@yigeqige)</a> | <a class="wo-reply-at" href="https://www.wmjrc.com/go.html?url=https://qiulai.wodemo.net/entry/333398#"  rel="nofollow" >@</a> 于 2019-09-08 09:57:<br />
+船新版本 00houqq.cn</p>
+<hr />
+<p><a href="https://www.wmjrc.com/go.html?url=https://luoximu.wodemo.net/"  rel="nofollow" >@luoximu</a> | <a class="wo-reply-at" href="https://www.wmjrc.com/go.html?url=https://qiulai.wodemo.net/entry/333398#"  rel="nofollow" >@</a> 于 2019-04-21 10:25:<br />
+666</p>
+<hr />
+<p>666 于 2018-09-18 07:27:<br />
+啥时候更新一下手册呀</p>
+<hr />
+<p>666 于 2018-09-18 07:25:<br />
+啥时候更新一下手册呀</p>
+<hr />
+<p>, 于 2017-08-08 07:10:<br />
+,</p>
+<hr />
+<p><a href="https://www.wmjrc.com/go.html?url=https://toin.wodemo.net/"  rel="nofollow" >晓谦 (@toin)</a> | <a class="wo-reply-at" href="https://www.wmjrc.com/go.html?url=https://qiulai.wodemo.net/entry/333398#"  rel="nofollow" >@</a> 于 2016-03-13 08:41:<br />
+========<br />
+《裕语言》速成开发手册</p>
+<p>《裕语言》是一基于 java 的扩展性脚本语言，丰富的类库定置简单快速开发你的应用程序，让开发过程变得娱乐化大众化。《裕语言》是由游改乐计算编程工程师 黄裕先生 定制以及实现原型代码，其代码简单方便的编写体验是一大亮点，目前还会有更多强大的功能完善中。iApp 是基于裕语言平台上运行的应用程序，全面想公众开放开放平台，任何有兴趣的人都可以参与开放设计自己的程序。</p>
+<p>iApp 相关 QQ 交流群：<br />
+iApp 开发交流（1） 239547050<br />
+iApp 开发交流（2） 103540883<br />
+iApp 开发交流（3） 216954373<br />
+iApp 开发交流（4） 334267540<br />
+iApp 官方游戏开发群 375679257<br />
+iApp 深度技术交流群 ********（大神可联系群管理加入）</p>
+<p>【s 变量】<br />
+用法：<br />
+申明变量<br />
+//可以赋数值<br />
+s a = 123<br />
+//可以赋字符串<br />
+s a = &#8220;123&#8221;<br />
+//可以副其他变量<br />
+s b = a</p>
+<p>说明：<br />
+变量类似一个箱子，你可以把数据储存在里面，等需要的时候就取出来使用，可以改变它装你想要装的数据。裕语言中的变量是可以根据赋值，而自动转换的，所有无需申明数据类型。</p>
+<p>提示：<br />
+变量的定义规范， 以 “s ”开头。 然后加上自己自定义的变量名，比如“abc、 nihao、sfw123、www_zzw”变量不允许全部为数字，不允许掺杂符号，请不要使用太长的变量名，不推荐使用中文作为变量名。</p>
+<p>空值：<br />
+如果访问一个没有声明的变量，将返回“null”空值类型，这个不对等于字符的 &#8216;null&#8217;。<br />
+判断是否空值的例子:(这里我们不知道变量“abc”是否空值)<br />
+f(abc == null)<br />
+{<br />
+syso(&#8220;是 null&#8221;)<br />
+}</p>
+<p>【.或// 注释语句】<br />
+用法<br />
+.这个是变量“a”它的值等于“1”<br />
+s a = 1<br />
+//这个是变量“b”它的值等于“2”<br />
+s b = 2</p>
+<p>说明：<br />
+注释语句符号可以用“.” 也可以用“//”，以注释符号开头的正行，将会被代码执行器无视。通常用于给自己标示代码的含义</p>
+<p>提示：<br />
+不支持代码尾部使用注释语句，注释行必须开头为注释符，举错误的例：</p>
+<p>s a = 1 //这个是变量“a”它的值等于“1”<br />
+//这个是变量“b”它的值等于“2” s b = 2</p>
+<p>【syso 打印】<br />
+用法：<br />
+syso(&#8220;1314&#8221;)<br />
+可以打印出数据，代码同等于 System.out.println(&#8220;1314&#8221;)，可以在测试时菜单，选择 syso 日志查看打印数据。</p>
+<p>【f 判断语句】<br />
+用法：<br />
+s a = 1<br />
+s b = 1<br />
+f(a == b)<br />
+{<br />
+syso(&#8220;等于&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;不等于&#8221;)<br />
+}</p>
+<p>s a = &#8220;nimei&#8221;<br />
+s b = &#8220;nimei&#8221;<br />
+f(a == b)<br />
+{<br />
+syso(&#8220;等于&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;不等于&#8221;)<br />
+}</p>
+<p>s a = 1<br />
+s b = 2<br />
+f(!a == b)<br />
+{<br />
+syso(&#8220;等于&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;不等于&#8221;)<br />
+}</p>
+<p>s a = 1<br />
+s b = 2<br />
+s c = 3<br />
+f(a &lt; b &amp;&amp; b &lt; c)<br />
+{<br />
+syso(&#8220;等于&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;不等于&#8221;)<br />
+}</p>
+<p>s a = 1<br />
+s b = 2<br />
+s c = 2<br />
+f(a == b || b == c)<br />
+{<br />
+syso(&#8220;等于&#8221;)<br />
+}<br />
+else<br />
+{<br />
+syso(&#8220;不等于&#8221;)<br />
+}</p>
+<p>说明：<br />
+条件判断语句，用于两个值的比较，常用于判断值是否对等与数值的大小，判断数据需要同类型数据对比。表达式返回的“是”，那么将执行 { 代码 } 里面的代码。“否”将执行 else 后面的代码（不支持运算表达式，例：a+b=2）</p>
+<p>支持运算符（返回 是 与 否）：<br />
+== 是否对等<br />
+!= 是否不等于<br />
+&gt;= 是否大于或等于<br />
+&lt;= 是否小于或等于<br />
+&gt; 是否大于<br />
+&lt; 是否小于<br />
+?* 字符串开通是否相同<br />
+*? 字符串结尾是否相同<br />
+? 字符串是否被包含<br />
+上面三个举例：<br />
+s a = &#8220;abcdef&#8221;<br />
+f(a ?* &#8220;abc&#8221;) 返回“是”<br />
+f(a *? &#8220;def&#8221;) 返回“是”<br />
+f(a ? &#8220;cde&#8221;) 返回“是”</p>
+<p>支持逻辑运算符：<br />
+|| 或者<br />
+&amp;&amp; 并且<br />
+! 反意</p>
+<p>【w 循环】<br />
+用法：<br />
+//这将循环 99 次<br />
+s a = 99<br />
+w(a &gt; 0)<br />
+{<br />
+syso(a)<br />
+s(a &#8211; 1, a)<br />
+}</p>
+<p>说明：<br />
+条件循环语句，比较值的变化，然后进行循环执行 { 代码 } 里面的代码。当条件为“否”的时候会停止循环，条件“是”的话，将一直循环执行。<br />
+支持运算符（返回 是 与 否）：（跟 f 语句 一样，请参考）</p>
+<p>【for 循环】<br />
+用法：<br />
+for(1; 20)<br />
+{<br />
+syso(&#8220;循环 20 次&#8221;)<br />
+}</p>
+<p>s a = 1<br />
+s b = 10<br />
+for(a; b)<br />
+{<br />
+syso(&#8220;循环 10 次&#8221;)<br />
+}</p>
+<p>说明：<br />
+参数可以给予另个参数，一个为初始循环的值，一个是最大循环值。</p>
+<p>【t 新线程】<br />
+用法：<br />
+t()<br />
+{<br />
+syso(&#8220;新线程里执行代码&#8221;)<br />
+}</p>
+<p>说明：<br />
+启用新线程，去执行一些需要执行很久的代码。比如把下载文件，获取网页，大量的文件操作，可以放入新线里执行。这里线程的概念，启用新的线程帮你处理代码，这样不会影响到主线程。</p>
+<p>【tw 提示】<br />
+用法：<br />
+tw(&#8220;你好&#8221;)</p>
+<p>说明：<br />
+用于提醒用户，界面显示时长大约为 2 秒钟。弹出代码中的文字，来提醒用户。</p>
+<p>【fd 删除文件】<br />
+用法：(将删除 SD 卡根目录的 abc.zip 文件)<br />
+s a = &#8220;abc.zip&#8221;<br />
+fd(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+用于删除指定的文件，是否成功返回字符：“true”或 “false”</p>
+<p>提示：同时将创建变量“b”，作为记录返回的值。（通用于下面的）</p>
+<p>【fe 文件是否存在】<br />
+用法：(将判断 SD 卡根目录的 abc.zip 文件是否存在)<br />
+s a = &#8220;abc.zip&#8221;<br />
+fe(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+用于判断指定的文件存在，是否存在返回字符：“true”或 “false”</p>
+<p>【fs 文件大小】<br />
+用法：(将获取 SD 卡根目录的 abc.zip 文件占用的大小)<br />
+s a = &#8220;abc.zip&#8221;<br />
+fs(a, b)<br />
+tw(b)</p>
+<p>说明：<br />
+用于判断指定的文件存在，是否存在返回数值单位(字节)，若获取失败将返回 “-1”。<br />
+转换为 KB：<br />
+s a = &#8220;abc.zip&#8221;<br />
+fs(a, b)<br />
+s(b/1024, b)<br />
+tw(b)<br />
+转换为 MB：<br />
+s2(b/1024/1024, b)<br />
+//保留所有小数<br />
+sn(b/1024/1024, b2)</p>
+<p>【fr 读取文本】<br />
+用法：(将读取 SD 卡根目录的 abc.txt 文件里面的内容)<br />
+s a = &#8220;abc.txt&#8221;<br />
+fr(a, b)<br />
+tw(b)</p>
+<p>s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;utf-8&#8221;<br />
+fr(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于读取文本文件的数据内容。</p>
+<p>【fra 读取文本】<br />
+用法：(将读取安装包内 assets 文件夹内的 abc.txt 文件里面的内容)<br />
+s a = &#8220;abc.txt&#8221;<br />
+fra(a, b)<br />
+tw(b)</p>
+<p>s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;utf-8&#8221;<br />
+fra(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于读取文本文件的数据内容。</p>
+<p>【fw 写入文本】<br />
+用法：(将文本数据写入至 SD 卡根目录的 abc.txt 文件里面)<br />
+s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;我是一个 txt 文件的内容&#8221;<br />
+fw(a, b)</p>
+<p>s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;我是一个 txt 文件的内容&#8221;<br />
+s c = &#8220;utf-8&#8221;<br />
+fw(a, b, c)</p>
+<p>【fc 复制文件】<br />
+用法：（在 SD 卡根目录 abc.txt 文件拷贝一个新的副本至 abc2.txt）<br />
+s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;abc2.txt&#8221;<br />
+fc(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于复制文件，创建一个新的副本文件。是否成功返回字符：“true”或 “false”</p>
+<p>【fl 文件列表】<br />
+用法：（获取一个目录的文件列表）<br />
+s a = &#8220;dir&#8221;<br />
+fl(a, b)<br />
+for(c; b)<br />
+{<br />
+syso(c)<br />
+}</p>
+<p>说明：上面例子是获取 sd 卡根目录文件夹“dir”里面的所有子目录以及文件，并获取结果传入变量“b”，并用 for 循环，来读取变量“b”里面的列表数据，并把列表数据复制给变量“c”，其中代码会自动创建并赋值好变量：b、c</p>
+<p>提示：<br />
+看似有些复杂，理解了就简单了， 这里的变量“b”类型是一个数组，里面包含了一个数据列表。通过 for 循环可以顺序读取这个列表。并每次循环把每列的数据赋值给变量“c”</p>
+<p>【ft 转移文件】<br />
+用法：（将 SD 卡根目录的 abc.txt 转移至 abc3.txt）<br />
+s a = &#8220;abc.txt&#8221;<br />
+s b = &#8220;abc3.txt&#8221;<br />
+ft(a, b, c)<br />
+tw(c)</p>
+<p>说明：<br />
+用于转移文件。是否成功返回字符：“true”或 “false”</p>
+<p>【fdir 获取 SD 卡根目录路径】<br />
+用法：（获取根目录路径并赋值至变量“a”）<br />
+fdir(a)<br />
+tw(a)</p>
+<p>说明：<br />
+通过获取根目录路径，就可以计算文件的绝对路径。</p>
+<p>【fuz 解压单个 zip】<br />
+用法：（将根目录文件 abc.apk 压缩包里的 AndroidManifest.xml 文件，解压到根目录 AndroidManifest2.xml）<br />
+s a = &#8220;abc.apk&#8221;<br />
+s b = &#8220;AndroidManifest.xml&#8221;<br />
+s c = &#8220;AndroidManifest2.xml&#8221;<br />
+fuz(a, b, c, d)<br />
+t</p>
+<hr /><div class="open-message">版权所有丨如未注明 , 均为原创丨本网站采用<a href="https://www.wmjrc.com/go.html?url=http://creativecommons.org/licenses/by-nc-sa/3.0/"  rel="nofollow" target="_blank" title="BY-NC-SA授权协议">BY-NC-SA</a>协议进行授权 <br >转载请注明原文链接：<a href="./2663.html" target="_blank" title="iApp教程(手册)">iApp教程(手册)</a></div>		      <div class="article-social">
+<a href="javascript:;" data-action="./ding/index.html" data-id="2663" id="Addlike" class="action"><i class="fa fa-heart-o"></i>喜欢 (<span class="count">40</span>)</a><span class="or"><style>.article-social .weixin:hover{background:#fff;}</style><a class="weixin" style="border-bottom:0px;font-size:15pt;cursor:pointer;">赏<div class="weixin-popover"><div class="popover bottom in"><div class="arrow"></div><div class="popover-title"><center>[]</center></div><div class="popover-content"><img width="200px" height="200px" src="../wp-content/uploads/2020/03/2020031716213962.png" ></div></div></div></a></span><span class="action action-share bdsharebuttonbox"><i class="fa fa-share-alt"></i>分享 (<span class="bds_count" data-cmd="count" title="累计分享0次">0</span>)<div class="action-popover"><div class="popover top in"><div class="arrow"></div><div class="popover-content"><a href="#" class="sinaweibo fa fa-weibo" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone fa fa-star" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="qq fa fa-qq" data-cmd="sqq" title="分享到QQ好友"></a><a href="#" class="bds_renren fa fa-renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin fa fa-weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more fa fa-ellipsis-h" data-cmd="more"></a></div></div></div></span></div>
+</article>
+<footer class="article-footer">
+<div class="article-tags"><i class="fa fa-tags"></i><a href="./tag/iapp/index.html" rel="tag">iApp</a></div></footer>
+<nav class="article-nav">
+<span class="article-nav-prev"><i class="fa fa-angle-double-left"></i> <a href="./2581.html" rel="prev">如何设置微信透明/空白头像</a></span>
+<span class="article-nav-next"><a href="./2598.html" rel="next">最新QQ透明头像会员/非会员设置教程</a>  <i class="fa fa-angle-double-right"></i></span>
+</nav>
+<div id="donatecoffee" style="overflow:auto;display:none;"><img width="400" height="400" alt="支持作者一杯咖啡" src="../wp-content/uploads/2020/03/2020031716213962.png"></div>
+<div class="related_top">
+<div class="related_posts"><ul class="related_img">
+<div class=\"r_title\">没有相关文章!</div></ul>
+<div class="relates">
+<ul>
+<li>暂无相关文章！</li>
+</ul></div></div>		</div>
+<div id="comment-ad" class="banner banner-related"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- PC文章页，相关文章下 -->
+<ins class="adsbygoogle"
+style="display:inline-block;min-width:0px;max-width:970px;width:100%;height:90px"
+data-ad-client="ca-pub-6244451092337069"
+data-ad-slot="8715208902"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		<div id="respond" class="no_webshot">
+<form action="#" data-static-disabled="true" method="post" id="commentform">
+<div class="comt-title">
+<div class="comt-avatar pull-left">
+<img src=https://fastly.jsdelivr.net/gh/yunluo/GitCafeApi/avatar/841.jpg class='avatar rand_avatar photo' />			</div>
+<div class="comt-author pull-left">
+发表我的评论			</div>
+<a id="cancel-comment-reply-link" class="pull-right" href="javascript:;">取消评论</a>
+</div>
+<div class="comt">
+<div class="comt-box">
+<textarea placeholder="说点什么吧…" class="input-block-level comt-area" name="comment" id="comment" cols="100%" rows="3" tabindex="1" onkeydown="if(event.ctrlKey&amp;&amp;event.keyCode==13){document.getElementById('submit').click();return false};"></textarea>
+<div class="comt-ctrl">
+<button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" tabindex="5"><i class="fa fa-check-square-o"></i> 提交评论</button>
+<div class="comt-tips pull-right"><input type='hidden' name='comment_post_ID' value='2663' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+<label for="comment_mail_notify" class="checkbox inline" style="padding-top:0;"><input name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked" type="checkbox">评论通知</label></div>
+<span data-type="comment-insert-smilie" class="muted comt-smilie"><i class="fa fa-smile-o"></i> 表情</span>
+<span class="muted ml5 comt-img"><i class="fa fa-picture-o"></i><a href="javascript:SIMPALED.Editor.img()" style="color:#999999"> 贴图</a></span>					<span class="muted ml5 comt-strong"><i class="fa fa-bold"></i><a href="javascript:SIMPALED.Editor.strong()" style="color:#999999"> 加粗</a></span>					<span class="muted ml5 comt-del"><i class="fa fa-strikethrough"></i><a href="javascript:SIMPALED.Editor.del()" style="color:#999999"> 删除线</a></span>					<span class="muted ml5 comt-center"><i class="fa fa-align-center"></i><a href="javascript:SIMPALED.Editor.center()" style="color:#999999"> 居中</a></span>					<span class="muted ml5 comt-italic"><i class="fa fa-italic"></i><a href="javascript:SIMPALED.Editor.italic()" style="color:#999999"> 斜体</a></span>					<span class="muted ml5 comt-sign"><i class="fa fa-pencil-square-o"></i><a href="javascript:SIMPALED.Editor.daka()" style="color:#999999"> 签到</a></span>				</div>
+</div>
+<div class="comt-comterinfo" id="comment-author-info" >
+<h4>Hi，您需要填写昵称和邮箱！</h4>
+<ul>
+<li class="form-inline"><label class="hide" for="author">昵称</label><input class="ipt" type="text" name="author" id="author" value="" tabindex="2" placeholder="昵称"><span class="help-inline">昵称 (必填)</span></li>
+<li class="form-inline"><label class="hide" for="email">邮箱</label><input class="ipt" type="text" name="email" id="email" value="" tabindex="3" placeholder="邮箱"><span class="help-inline">邮箱 (必填)</span></li>
+<li class="form-inline"><label class="hide" for="url">网址</label><input class="ipt" type="text" name="url" id="url" value="" tabindex="4" placeholder="网址"><span class="help-inline">网址</span></li>
+</ul>
+</div>
+</div>
+</form>
+</div>
+<div class="banner banner-comment"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 评论 -->
+<ins class="adsbygoogle"
+style="display:inline-block;min-width:0px;max-width:970px;width:100%;height:90px"
+data-ad-client="ca-pub-6244451092337069"
+data-ad-slot="6753663732"</ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>	</div>
+</div>
+<aside class="sidebar">
+<div class="widget git_postlist"><div class="title"><h2>推荐阅读</h2></div><ul><li>
+<a target="_blank" href="./1809.html" title="新浪微博按照日期筛选微博的方法" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/01/beepress3-1547483032.jpeg" alt="新浪微博按照日期筛选微博的方法" /></span><span class="text">新浪微博按照日期筛选微博的方法</span><span class="muted">2019-03-13</span><span class="muted">0</span></a>
+</li>
+<li>
+<a target="_blank" href="./2598.html" title="最新QQ透明头像会员/非会员设置教程" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/08/2019082017444254.png" alt="最新QQ透明头像会员/非会员设置教程" /></span><span class="text">最新QQ透明头像会员/非会员设置教程</span><span class="muted">2019-08-20</span><span class="muted">17评论</span></a>
+</li>
+<li>
+<a target="_blank" href="./2434.html" title="使用httrack离线下载整个网站" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/05/2019051619293273.png" alt="使用httrack离线下载整个网站" /></span><span class="text">使用httrack离线下载整个网站</span><span class="muted">2019-05-17</span><span class="muted">0</span></a>
+</li>
+<li>
+<a target="_blank" href="./1611.html" title="VMware14虚拟机安装教程【转载】" ><span class="thumbnail"><img width="100px" height="64px" src="../wp-content/uploads/2019/02/beepress7-1550762021.jpeg" alt="VMware14虚拟机安装教程【转载】" /></span><span class="text">VMware14虚拟机安装教程【转载】</span><span class="muted">2019-02-21</span><span class="muted">0</span></a>
+</li>
+</ul></div><div class="widget git_banner"><div class="git_banner_inner"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 小工具2 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-6244451092337069"
+data-ad-slot="5730679267"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div><div class="widget git_rec"><a target="_blank" class="aclass02" href="https://wmjrc.com/go.html/?url=https://portal.qiniu.com/signup?code=1ha1oh0rvpo42" title="七牛云：不仅仅是云存储" >七牛云：不仅仅是云存储</a><a target="_blank" class="aclass01" href="https://wmjrc.com/go.html/?url=https://www.vultr.com/?ref=7638531" title="vultr：充十刀送十刀" >vultr：充十刀送十刀</a><a target="_blank" class="aclass03" href="https://wmjrc.com/go.html/?url=https://console.upyun.com/register/?invite=r1fbGQsKH" title="又拍云：注册认证送 61元代金券" >又拍云：注册认证送 61元代金券</a><a target="_blank" class="aclass04" href="https://wmjrc.com/go.html/?url=https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=bfqmx0zv" title="阿里云：爆款云服务器，低至2折" >阿里云：爆款云服务器，低至2折</a><a target="_blank" class="aclass05" href="https://wmjrc.com/go.html/?url=https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=4091708dcdf64534b4ea66fee567568c&from=console" title="腾讯云：新用户领取2860元代金券" >腾讯云：新用户领取2860元代金券</a></div><!-- From widget cache in 0.00043 seconds --><div class="widget widget_text"><div class="title"><h2>微信公众号：不务正业的挖煤工</h2></div>			<div class="textwidget"><p><img class="aligncenter wp-image-1223" src="../wp-content/uploads/2019/01/2019012314404215.png" alt="" width="360" height="240" /></a></p>
+</div>
+</div><!-- From widget cache in 0.00035 seconds --></aside></section>
+<div id="footbar" style="border-top: 2px solid #8E44AD;"><ul>
+<li><p class="first">版权声明</p><span><div style="width:215px;text-align:justify;">本站的文章和资源来自互联网或者站长的原创，按照 CC BY -NC -SA 3.0 CN协议发布和共享，转载或引用本站文章应遵循相同协议。如果有侵犯版权的资源请尽快联系站长，我们会在24h内删除有争议的资源。</div></span></li>
+<li><p class="second">合作网站</p><span><a
+href="https://wmjrc.com/go.html/?url=https://portal.qiniu.com/signup?code=1ha1oh0rvpo42" target="_blank"><img 
+style="width:100px;height:32px;" 
+src="../wp-content/uploads/2019/01/2019011812531023.png" 
+alt="七牛云" /></a>  
+<a href="https://wmjrc.com/go.html/?url=https://cloud.tencent.com/act/cps/redirect?redirect=1040&cps_key=4091708dcdf64534b4ea66fee567568c&from=console" target="_blank"><img 
+style="width:100px;height:24px;" 
+src="../wp-content/uploads/2019/01/2019011812531095.png" 
+alt="腾讯云" /></a>
+<a href="https://wmjrc.com/go.html/?url=https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=bfqmx0zv" target="_blank"><img 
+style="width:100px;height:23px;" 
+src="../wp-content/uploads/2019/01/2019011812530981.png" 
+alt="阿里云" /></a>
+<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img 
+style="width:100px;height:34px;" 
+src="../wp-content/uploads/2019/01/2019011812531054.png" 
+alt="又拍云提供下载支持" /></a>  
+<br>
+<a href="https://wmjrc.com/go.html/?url=https://wordpress.org" target="_blank"><img 
+style="width:32px;height:32px;" 
+src="../wp-content/uploads/2019/01/2019011718550479.png" 
+alt="由WordPress驱动" /></a></span></li>
+<li><p class="third">友情链接</p><span><ul><li><a href="https://gitcafe.net/" title="极客公园" target="_blank">极客公园</a></li></ul></span></li>
+<li><p class="fourth">微信公众号</p><span>    <img 
+style="width:215px;height:169px;" 
+src="../wp-content/uploads/2019/02/2019021018090557.png" 
+alt="微信公众号" /></span></li>
+</ul>
+</div>
+<footer style="border-top: 1px solid ;background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAUAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAAgAKAwERAAIRAQMRAf/EAEwAAQEAAAAAAAAAAAAAAAAAAAAJAQEAAAAAAAAAAAAAAAAAAAAAEAEBAAAAAAAAAAAAAAAAAAAAlREBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Ah7DAhg//2Q=='); background-repeat: repeat;" class="footer">
+<div class="footer-inner"><div class="footer-copyright">Copyright © 2018-2021 <a href="../index.html" title="wmjrc">wmjrc</a> | <a href="../sitemap.html" target="_blank" title="站点地图（HTML版）">网站地图</a> | 
+<img style="width: 20px; height: 20px;" src="../wp-content/uploads/2019/01/201901050816024.png" alt="备案标识" /><a href="https://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener"> 豫ICP备 18046141号-1</a>  <a href="http://www.beian.gov.cn/" target="_blank" rel="nofollow noopener"> 鄂公网安备 42010702000606号</a>
+<span class="trackcode pull-right"><script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?8b020d41e04f8083ebd69d310a10a8f0";
+var s = document.getElementsByTagName("script")[0]; 
+s.parentNode.insertBefore(hm, s);
+})();
+</script></span></div></div></footer>
+<script type='text/javascript' src='https://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.8.3.min.js'></script>
+<script type='text/javascript' src='../wp-content/themes/Git-alpha/assets/js/app.js'></script>
+<!-- 94 次查询 用时 0.294 秒, 耗费了 25.26MB 内存 --><script>with(document)0[(getElementsByTagName("head")[0]||body).appendChild(createElement("script")).src="https://fastly.jsdelivr.net/gh/yunluo/GitCafeApi/static/api/js/share.js?v=89860593.js?cdnversion="+~(-new Date()/36e5)];</script></body>
+</html><!-- WP Fastest Cache file was created in 0.20890188217163 seconds, on 15-07-26 10:07:47 --><!-- via php -->

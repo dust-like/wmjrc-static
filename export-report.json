@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-07-15T05:43:13.547Z",
+  "pages": 283,
+  "assets": 47,
+  "failed": [
+    {
+      "url": "https://www.wmjrc.com/archives/&",
+      "error": "HTTP 404"
+    },
+    {
+      "url": "https://www.wmjrc.com/archives/&",
+      "error": "HTTP 404"
+    }
+  ],
+  "skipped": []
+}
